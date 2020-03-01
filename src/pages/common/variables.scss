@@ -14,3 +14,40 @@ $quicksand: Quicksand,
 'Open Sans',
 Arial,
 sans-serif;
+
+@mixin body-text {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.714rem;
+  color: $dark75;
+}
+
+@mixin h1-text {
+  font-family: $quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.714rem;
+  line-height: 2.143rem;
+  color: $dark100;
+}
+
+@mixin h2-text {
+  font-family: $quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.357rem;
+  line-height: 1.714rem;
+  color: $dark100;
+}
+
+@mixin h3-text {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.857rem;
+  line-height: 1.071rem;
+  text-transform: uppercase;
+  color: $dark100;
+}

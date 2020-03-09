@@ -1,0 +1,22 @@
+.color-block {
+  width: 269px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center; заменить на паддинг, дакет */
+
+  &__square {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+
+    &_dark {
+      background-color: $dark100;
+    }
+  }
+
+  &__text-container {
+    width: 159px;
+    height: 57px;
+  }
+}

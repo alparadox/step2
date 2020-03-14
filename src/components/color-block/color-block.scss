@@ -19,4 +19,18 @@
     width: 159px;
     height: 57px;
   }
+
+  &__color-name {
+    font-family: $quicksand;
+    font-weight: bold;
+    font-size: 1.357rem;
+    margin-top: 9px;
+  }
+
+  &__color-cod {
+    font-family: $quicksand;
+    font-weight: normal;
+    font-size: 1.357rem;
+    margin-top: 5px;
+  }
 }

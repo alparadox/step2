@@ -10,8 +10,32 @@
     height: 70px;
     border-radius: 6px;
 
-    &_dark {
+    &_dark-100 {
       background-color: $dark100;
+    }
+
+    &_dark-75 {
+      background-color: $dark75;
+    }
+
+    &_dark-50 {
+      background-color: $dark50;
+    }
+
+    &_dark-25 {
+      background-color: $dark25;
+    }
+
+    &_dark-5 {
+      background-color: $dark5;
+    }
+
+    &_purple {
+      background-color: $purple;
+    }
+
+    &_green {
+      background-color: $green;
     }
   }
 
@@ -27,7 +51,7 @@
     margin-top: 9px;
   }
 
-  &__color-cod {
+  &__color-code {
     font-family: $quicksand;
     font-weight: normal;
     font-size: 1.357rem;

@@ -1,3 +1,72 @@
 .text-block {
-  background-color: red;
+  display: flex;
+  width: 403px;
+  justify-content: flex-start;
+
+  &__tag {
+    font-family: $montserrat;
+    font-weight: normal;
+    color: $dark25;
+
+    &_h1 {
+      font-size: 24px;
+      line-height: 29px;
+      margin-left: 8px;
+    }
+
+    &_h2 {
+      font-size: 19px;
+      line-height: 23px;
+      margin-left: 10px;
+    }
+
+    &_h3 {
+      font-size: 12px;
+      line-height: 15px;
+      margin-left: 20px;
+      text-transform: uppercase;
+    }
+
+    &_body {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  &__text {
+    margin-left: 30px;
+
+    &_h1 {
+      font-family: $quicksand;
+      color: $dark100;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &_h2 {
+      font-family: $quicksand;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 24px;
+      color: $dark100;
+    }
+
+    &_h3 {
+      font-family: $montserrat;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: $dark100;
+    }
+
+    &_body {
+      font-family: $dark75;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color: $dark75;
+    }
+  }
 }

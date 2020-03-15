@@ -1,2 +1,15 @@
 mixin text-block(options)
- p.text-block test
+  -
+    let tagClassName = 'text-block__tag'
+    tagClassName += (options.tag == 'h1') ? ' text-block__tag_h1' : ''
+    tagClassName += (options.tag == 'h2') ? ' text-block__tag_h2' : ''
+    tagClassName += (options.tag == 'h3') ? ' text-block__tag_h3' : ''
+    tagClassName += (options.tag == 'body') ? ' text-block__tag_body' : ''
+    let textClassName = 'text-block__text'
+    textClassName += (options.text == 'h1') ? ' text-block__text_h1' : ''
+    textClassName += (options.text == 'h2') ? ' text-block__text_h2' : ''
+    textClassName += (options.text == 'h3') ? ' text-block__text_h3' : ''
+    textClassName += (options.text == 'body') ? ' text-block__text_body' : ''
+  .text-block
+    p(class= tagClassName)= options.tagInfo
+    p(class= textClassName)= options.textInfo

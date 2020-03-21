@@ -1,6 +1,7 @@
 .text-block {
   display: flex;
-  width: 403px;
+  max-width: 28.7857rem;
+  width: 100%;
   justify-content: flex-start;
 
   &__tag {
@@ -9,54 +10,54 @@
     color: $dark25;
 
     &_h1 {
-      font-size: 24px;
-      line-height: 29px;
-      margin-left: 8px;
+      font-size: 1.7143rem;
+      line-height: 2.0714rem;
+      margin-left: 0.5714rem;
     }
 
     &_h2 {
-      font-size: 19px;
-      line-height: 23px;
-      margin-left: 10px;
+      font-size: 1.3571rem;
+      line-height: 1.6429rem;
+      margin-left: 0.7143rem;
     }
 
     &_h3 {
-      font-size: 12px;
-      line-height: 15px;
-      margin-left: 20px;
+      font-size: 0.8571rem;
+      line-height: 1.0714rem;
+      margin-left: 1.4286rem;
       text-transform: uppercase;
     }
 
     &_body {
-      font-size: 14px;
-      line-height: 24px;
+      font-size: 1rem;
+      line-height: 1.7143rem;
     }
   }
 
   &__text {
-    margin-left: 30px;
+    margin-left: 2.1429rem;
 
     &_h1 {
       font-family: $quicksand;
       color: $dark100;
       font-weight: bold;
-      font-size: 24px;
-      line-height: 30px;
+      font-size: 1.7143rem;
+      line-height: 2.1429rem;
     }
 
     &_h2 {
       font-family: $quicksand;
       font-weight: bold;
-      font-size: 19px;
-      line-height: 24px;
+      font-size: 1.3571rem;
+      line-height: 1.7143rem;
       color: $dark100;
     }
 
     &_h3 {
       font-family: $montserrat;
       font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
+      font-size: 0.8571rem;
+      line-height: 1.0714rem;
       text-transform: uppercase;
       color: $dark100;
     }
@@ -64,8 +65,8 @@
     &_body {
       font-family: $dark75;
       font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
+      font-size: 1rem;
+      line-height: 1.7143rem;
       color: $dark75;
     }
   }

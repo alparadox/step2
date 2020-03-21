@@ -1,3 +1,5 @@
+include ../components/color-block/color-block.pug
+include ../components/text-block/text-block.pug
 doctype
 html
   head
@@ -8,5 +10,14 @@ html
     title Colors and Type
     link(rel='stylesheet' href='colors-and-type.scss' type='text/css')
   body
-    h1 Привет мир! Hello world!
-    p Hello rada Привет мира
+    +color-block ({name: 'Dark Shade 100%', code: '#1F2041', color: 'dark-100'})
+    +color-block ({name: 'Dark Shade 75%', code: '#1F2041', color: 'dark-75'})
+    +color-block ({name: 'Dark Shade 50%', code: '#1F2041', color: 'dark-50'})
+    +color-block ({name: 'Dark Shade 25%', code: '#1F2041', color: 'dark-25'})
+    +color-block ({name: 'Dark Shade 5%', code: '#1F2041', color: 'dark-5'})
+    +color-block ({name: 'Purple', code: '#BC9CFF', color: 'purple'})
+    +color-block ({name: 'Green', code: '#6FCF97', color: 'green'})
+    +text-block ({tagInfo: 'H1', textInfo: 'This one is the sub-section or widget title', tag: 'h1', text: 'h1'})
+    +text-block ({tagInfo: 'H2', textInfo: 'Next one is the item title inside widgets', tag:'h2', text:'h2'})
+    +text-block ({tagInfo: 'h3', textInfo: 'This is a label or CTA text', tag:'h3', text:'h3'})
+    +text-block ({tagInfo: 'Body', textInfo: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', tag:'body', text:'body'})

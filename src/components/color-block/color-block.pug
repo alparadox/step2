@@ -1,0 +1,16 @@
+mixin color-block(options)
+  -
+    let squareColorClass = "color-block__square"
+    squareColorClass += (options.color == "dark-100") ? " color-block__square_dark-100" : ""
+    squareColorClass += (options.color == "dark-75") ? " color-block__square_dark-75" : ""
+    squareColorClass += (options.color == "dark-50") ? " color-block__square_dark-50" : ""
+    squareColorClass += (options.color == "dark-25") ? " color-block__square_dark-25" : ""
+    squareColorClass += (options.color == "dark-5") ? " color-block__square_dark-5" : ""
+    squareColorClass += (options.color == "purple") ? " color-block__square_purple" : ""
+    squareColorClass += (options.color == "green") ? " color-block__square_green" : ""
+  .color-block
+    div(class= squareColorClass)
+    .color-block__text-container
+      p.color-block__color-name= options.name
+      p.color-block__color-code= options.code
+

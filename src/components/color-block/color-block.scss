@@ -1,0 +1,60 @@
+.color-block {
+  max-width: 19.2143rem;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__square {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.4286rem;
+
+    &_dark-100 {
+      background-color: $dark100;
+    }
+
+    &_dark-75 {
+      background-color: $dark75;
+    }
+
+    &_dark-50 {
+      background-color: $dark50;
+    }
+
+    &_dark-25 {
+      background-color: $dark25;
+    }
+
+    &_dark-5 {
+      background-color: $dark5;
+    }
+
+    &_purple {
+      background-color: $purple;
+    }
+
+    &_green {
+      background-color: $green;
+    }
+  }
+
+  &__text-container {
+    width: 11.3571rem;
+    height: 4.0714rem;
+  }
+
+  &__color-name {
+    font-family: $quicksand;
+    font-weight: bold;
+    font-size: 1.357rem;
+    margin-top: 0.6429rem;
+  }
+
+  &__color-code {
+    font-family: $quicksand;
+    font-weight: normal;
+    font-size: 1.357rem;
+    margin-top: 0.3571rem;
+  }
+}

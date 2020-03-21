@@ -1,3 +1,4 @@
+include ../components/text-field/text-field.pug
 doctype
 html
   head
@@ -8,3 +9,4 @@ html
     title Form elements
     link(rel='stylesheet' href='form-elements.scss' type='text/css')
   body
+    +text-field ({type: 'text', name: 'email', text: 'Email'})

@@ -1,4 +1,5 @@
 include ../components/text-field/text-field.pug
+include ../components/checkbox/checkbox.pug
 doctype
 html
   head
@@ -10,3 +11,6 @@ html
     link(rel='stylesheet' href='form-elements.scss' type='text/css')
   body
     +text-field ({type: 'text', name: 'email', text: 'Email'})
+    br
+    br
+    +checkbox ({text:'Можно курить', name:'checkbox'})

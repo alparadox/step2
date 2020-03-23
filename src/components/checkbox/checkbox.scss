@@ -1,5 +1,7 @@
 .checkbox {
   &__button {
+    max-width: 222px;
+    width: 100%;
 
     &:checked,
     &:not(:checked) {
@@ -31,6 +33,8 @@
     font-size: 14px;
     line-height: 18px;
     color: $dark50;
+    max-width: 192px;
+    width: 100%;
     // добавлены отступы к соседствующим меткам
     display: inline-block;
     position: relative;
@@ -74,4 +78,8 @@
       transform: rotate(-45deg);
     }
   }
+}
+
+.border {
+  margin-top: 9.56px;
 }

@@ -1,5 +1,6 @@
 include ../components/text-field/text-field.pug
 include ../components/checkbox/checkbox.pug
+include ../components/radio/radio.pug
 doctype
 html
   head
@@ -19,3 +20,11 @@ html
       +checkbox ({text:'Можно с питомцами', name:'checkbox'})
     div.border
       +checkbox ({text:'Можно пригласить гостей (до 10 человек)', name:'checkbox'})
+    br
+    br
+    +radio ({name:'male', text:"Мужчина", name2:'male', text2:"Женщина"})
+    br
+    br
+    div
+      +radio2 ({name2:'male', text2:"Мужчина"})
+      +radio2 ({name2:'male', text2:"Женщина"})

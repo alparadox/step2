@@ -21,10 +21,4 @@ html
     div.border
       +checkbox ({text:'Можно пригласить гостей (до 10 человек)', name:'checkbox'})
     br
-    br
-    +radio ({name:'male', text:"Мужчина", name2:'male', text2:"Женщина"})
-    br
-    br
-    div
-      +radio2 ({name2:'male', text2:"Мужчина"})
-      +radio2 ({name2:'male', text2:"Женщина"})
+    +radio ({name:'male', text:'Мужчина', text2:'Женщина', value:'male', value2:'female'})

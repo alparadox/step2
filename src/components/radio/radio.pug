@@ -1,12 +1,7 @@
 mixin radio(options)
   label.radio
-    input.radio__button(type="radio" name= options.name)
+    input.radio__button(type='radio' name= options.name value= options.value checked )
     span.radio__text= options.text
-    input.radio__button(type="radio" name= options.name2)
-    span.radio__text= options.text2
-
-
-mixin radio2(options)
   label.radio
-    input.radio__button(type="radio" name= options.name2)
+    input.radio__button(type='radio' name= options.name value= options.value2)
     span.radio__text= options.text2

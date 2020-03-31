@@ -1,4 +1,7 @@
 include ../components/text-field/text-field.pug
+include ../components/radio/radio.pug
+include ../components/checkbox-buttons/checkbox-buttons.pug
+include ../components/toggle/toggle.pug
 doctype
 html
   head
@@ -10,3 +13,11 @@ html
     link(rel='stylesheet' href='form-elements.scss' type='text/css')
   body
     +text-field ({type: 'text', name: 'email', text: 'Email'})
+    br
+    br
+    +checkbox-buttons
+    br
+    +radio ({name:'male', text:'Мужчина', text2:'Женщина', value:'male', value2:'female'})
+    br
+    br
+    +toggle

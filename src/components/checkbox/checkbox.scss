@@ -1,0 +1,85 @@
+.checkbox {
+  &__button {
+    max-width: 222px;
+    width: 100%;
+
+    &:checked,
+    &:not(:checked) {
+      //перенос квадрата за область видимости
+      position: absolute;
+      left: -9999px;
+    }
+
+    // элемент выбран, галочка видна
+    &:checked+.checkbox__text:after {
+      opacity: 1;
+    }
+
+    // элемент не выбран, галочка не видна
+    &:not(:checked)+.checkbox__text:after {
+      opacity: 0;
+    }
+
+    //изменение цвета границы контейнера
+    &:checked+.checkbox__text:before {
+      border: 1px solid $purple;
+    }
+  }
+
+  &__text {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $dark50;
+    max-width: 192px;
+    width: 100%;
+    // добавлены отступы к соседствующим меткам
+    display: inline-block;
+    position: relative;
+    padding-left: 29.74px;
+    cursor: pointer;
+
+    &:before {
+      //добавили стилизованные контейнеры с закругленными краями
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 20px;
+      height: 20px;
+      background: #FFFFFF;
+      border: 1px solid $dark25;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+
+    &:after {
+      //анимация для галочки
+      content: "";
+      position: absolute;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      //довален индикатор выбора - галочка
+      left: 6px;
+      top: 6px;
+      width: 6px;
+      height: 4px;
+      border-radius: 1px;
+      border-left: 2px solid $purple;
+      border-bottom: 2px solid $purple;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.border {
+  margin-top: 9.56px;
+}

@@ -1,0 +1,17 @@
+@import '../checkbox/checkbox.scss';
+
+.checkbox-buttons {
+  &__title {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: $dark100;
+    text-transform: uppercase;
+  }
+
+  &__container-other-top {}
+
+  &__container {}
+}

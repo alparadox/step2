@@ -1,27 +1,21 @@
-.checkbox {
+.rich-checkbox {
   &__button {
-    max-width: 222px;
-    width: 100%;
 
     &:checked,
     &:not(:checked) {
-      //перенос квадрата за область видимости
       position: absolute;
       left: -9999px;
     }
 
-    // элемент выбран, галочка видна
-    &:checked+.checkbox__text:after {
+    &:checked+.rich-checkbox__text:after {
       opacity: 1;
     }
 
-    // элемент не выбран, галочка не видна
-    &:not(:checked)+.checkbox__text:after {
+    &:not(:checked)+.rich-checkbox__text:after {
       opacity: 0;
     }
 
-    //изменение цвета границы контейнера
-    &:checked+.checkbox__text:before {
+    &:checked+.rich-checkbox__text:before {
       border: 1px solid $purple;
     }
   }
@@ -29,20 +23,16 @@
   &__text {
     font-family: $montserrat;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 14px;
     line-height: 18px;
-    color: $dark50;
-    max-width: 192px;
-    width: 100%;
-    // добавлены отступы к соседствующим меткам
+    color: $dark75;
     display: inline-block;
     position: relative;
-    padding-left: 29.74px;
+    padding-left: 30px;
     cursor: pointer;
 
     &:before {
-      //добавили стилизованные контейнеры с закругленными краями
       content: "";
       position: absolute;
       left: 0px;
@@ -56,14 +46,12 @@
     }
 
     &:after {
-      //анимация для галочки
       content: "";
       position: absolute;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
       -o-transition: all 0.2s ease;
       transition: all 0.2s ease;
-      //довален индикатор выбора - галочка
       left: 6px;
       top: 6px;
       width: 6px;
@@ -77,5 +65,21 @@
       -ms-transform: rotate(-45deg);
       transform: rotate(-45deg);
     }
+  }
+
+  &__info-text {
+    width: 100%;
+    max-width: 230px;
+    top: 4px;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-family: $dark50;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: $dark50;
   }
 }

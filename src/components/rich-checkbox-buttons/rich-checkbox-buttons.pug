@@ -1,0 +1,10 @@
+include ../rich-checkbox/rich-checkbox.pug
+
+mixin rich-checkbox-buttons(options)
+  .rich-checkbox-buttons
+    .rich-checkbox-buttons__title= options.title
+    .rich-checkbox-buttons__wrapper
+      +rich-checkbox({text:'Широкий коридор', infoText:'Ширина коридоров в номере не менее 91 см.'})
+    .rich-checkbox-buttons__wrapper
+      +rich-checkbox({text:'Помощник для инвалидов', infoText:'На 1 этаже вас встретит специалист и проводит до номера.'})
+  

@@ -4,6 +4,7 @@ include ../components/checkbox-buttons/checkbox-buttons.pug
 include ../components/toggle/toggle.pug
 include ../components/rich-checkbox-buttons/rich-checkbox-buttons.pug
 include ../components/room-info/room-info.pug
+include ../components/bullet-list/bullet-list.pug
 
 doctype
 html
@@ -18,14 +19,16 @@ html
     +text-field({type: 'text', name: 'email', text: 'Email'})
     br
     br
-    +checkbox-buttons
+    +checkbox-buttons()
     br
     +radio({name:'male', text:'Мужчина', text2:'Женщина', value:'male', value2:'female'})
     br
     br
-    +toggle
+    +toggle()
     br
     br
     +rich-checkbox-buttons({title:'Rich Checkbox Buttons'})
     br
     +room-info()
+    br
+    +bullet-list({title:'Bullet list'})

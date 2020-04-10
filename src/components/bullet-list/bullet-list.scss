@@ -1,0 +1,42 @@
+.bullet-list {
+
+  &__title {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 9px;
+    text-transform: uppercase;
+    color: $dark100;
+  }
+
+  &__catalog {
+    width: 100%;
+    max-width: 243px;
+  }
+
+  &__element {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark75;
+    list-style-type: none;
+    margin-left: -30px;
+    margin-top: 10px;
+
+    &:before {
+      left: -10px;
+      top: 0px;
+      width: 10.43px;
+      height: 10px;
+      border-radius: 100%;
+      background-color: rgba(31, 32, 65, 0.25);
+      content: "";
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

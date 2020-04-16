@@ -1,0 +1,48 @@
+.bullet-list {
+
+  &__title {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: $dark100;
+  }
+
+  &__catalog {
+    width: 100%;
+    max-width: 256px;
+    padding-left: 0px;
+  }
+
+  &__element {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark75;
+    position: relative;
+    list-style-type: none;
+    padding-left: 21px;
+    padding-top: 0px;
+    margin-top: 10px;
+
+    &:first-child {
+      padding-top: 1px;
+    }
+
+    &:before {
+      left: 0px;
+      top: 7px;
+      width: 10.43px;
+      height: 10px;
+      border-radius: 100%;
+      background-color: rgba(31, 32, 65, 0.25);
+      content: "";
+      position: absolute;
+      display: inline-block;
+    }
+  }
+}

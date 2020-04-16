@@ -1,0 +1,14 @@
+mixin detail(options)
+  .room-info__detail
+    .material-icons.room-info__icon= options.icon
+    .room-info__container
+      p.room-info__property= options.property
+      p.room-info__description= options.description
+
+mixin room-info(options)
+  .room-info
+    +detail({icon:'insert_emoticon', property:'Комфорт', description:'Шумопоглощающие стены'})
+    .room-info__rectangle
+    +detail({icon:'location_city', property:'Удобство', description:'Окно в каждой из спален'})
+    .room-info__rectangle
+    +detail({icon:'whatshot', property:'Уют', description:'Номер оснащён камином'})

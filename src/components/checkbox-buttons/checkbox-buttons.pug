@@ -3,9 +3,9 @@ include ../checkbox/checkbox.pug
 mixin checkbox-buttons(options)
   .checkbox-buttons
     .checkbox-buttons__title Checkbox buttons
-    .chekbox-buttons__container-other-top
+    .checkbox-buttons__wrapper
       +checkbox ({text:'Можно курить', name:'checkbox'})
-    .chekbox-buttons__container
+    .checkbox-buttons__wrapper
       +checkbox ({text:'Можно с питомцами', name:'checkbox'})
-    .chekbox-buttons__container
+    .checkbox-buttons__wrapper
       +checkbox ({text:'Можно пригласить гостей (до 10 человек)', name:'checkbox'})

@@ -1,18 +1,18 @@
-@import '../checkbox/checkbox.scss';
+@import '../rich-checkbox/rich-checkbox.scss';
 
-.checkbox-buttons {
+.rich-checkbox-buttons {
   &__title {
     font-family: $montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
-    color: $dark100;
     text-transform: uppercase;
+    color: $dark100;
   }
 
   &__wrapper {
-    margin-top: 8px;
+    margin-top: 11px;
 
     &:nth-child(2) {
       margin-top: 14px;

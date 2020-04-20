@@ -1,2 +1,5 @@
 mixin rate-button(options)
-  p ghbdtn
+  - i=0;
+  while i<5
+    .rate-button__stars.material-icons star
+    - i+=1;

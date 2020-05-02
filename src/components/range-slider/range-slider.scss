@@ -1,0 +1,13 @@
+@import '../../node_modules/ion-rangeSlider/css/ion.rangeSlider.min.css';
+
+.range-slider {
+  width: 300px;
+}
+
+.irs--round .irs-handle {
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+}

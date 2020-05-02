@@ -1,2 +1,5 @@
 mixin text-field(options)
   input.text-field(type= options.type, name= options.name, placeholder= options.text )
+
+mixin masked-text-field(options)
+  input.text-field.js-text-field_masked(type= options.type, name= options.name, placeholder= options.text)

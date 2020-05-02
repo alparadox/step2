@@ -18,6 +18,8 @@ html
     meta(name='description' content='Form elements')
     title Form elements
     link(rel='stylesheet' href='form-elements.scss' type='text/css')
+    script(src='jquery-for-parcel.js')
+    script(src='form-elements.js')
   body
     +text-field({type: 'text', name: 'email', text: 'Email'})
     br
@@ -53,3 +55,6 @@ html
     br
     br
     +subscription-text-field()
+    br
+    br
+    +masked-text-field ({type: 'text', name: 'date', text: 'ДД.ММ.ГГГГ'})

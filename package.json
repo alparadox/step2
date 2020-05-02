@@ -22,5 +22,9 @@
     "parcel-bundler": "^1.12.4",
     "pug": "^2.0.4",
     "sass": "^1.26.2"
+  },
+  "dependencies": {
+    "jquery": "^3.5.0",
+    "jquery.maskedinput": "^1.4.1"
   }
 }

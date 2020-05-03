@@ -1,4 +1,4 @@
-@import '../../node_modules/ion-rangeSlider/css/ion.rangeSlider.min.css';
+@import "../../node_modules/ion-rangeSlider/css/ion.rangeSlider.min.css";
 
 .range-slider {
   width: 300px;
@@ -7,7 +7,33 @@
 .irs--round .irs-handle {
   width: 12px;
   height: 12px;
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-  border: 2px solid #FFFFFF;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border: 2px solid #ffffff;
   border-radius: 10px;
+  top: 32px;
+  box-shadow: none;
+}
+
+.irs--round .irs-line {
+  width: 266px;
+  height: 6px;
+  background: #ffffff;
+  border: 1px solid $dark25;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.irs--round .irs-bar {
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 3px;
+  top: 36px;
+  height: 6px;
+}
+
+.irs--round .irs-from,
+.irs--round .irs-to,
+.irs--round .irs-single,
+.irs--round .irs-min,
+.irs--round .irs-max {
+  opacity: 0;
 }

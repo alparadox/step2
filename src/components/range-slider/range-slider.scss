@@ -2,16 +2,21 @@
 
 .range-slider {
   width: 266px;
-  text-align: right;
+  &__text-wrapper {
+    display: inline-flex;
+    width: 163.61px;
+  }
+  &__number-wrapper {
+    display: inline-flex;
+  }
   &__text {
     font-family: $montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 16px;
     text-transform: uppercase;
     color: $dark100;
-    text-align: left;
   }
   &__from {
     font-family: $montserrat;

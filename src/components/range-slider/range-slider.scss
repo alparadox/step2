@@ -1,16 +1,63 @@
 @import "../../node_modules/ion-rangeSlider/css/ion.rangeSlider.min.css";
 
 .range-slider {
-  width: 300px;
+  width: 266px;
+  &__text-wrapper {
+    display: inline-flex;
+    width: 163.61px;
+  }
+  &__number-wrapper {
+    display: inline-flex;
+  }
+  &__text {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $dark100;
+  }
+  &__from {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $dark50;
+    display: inline-flex;
+    &::after {
+      content: "₽";
+    }
+  }
+  &__to {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $dark50;
+    display: inline-flex;
+    &::before {
+      content: "-";
+      padding-left: 4px;
+      padding-right: 3px;
+    }
+    &::after {
+      content: "₽";
+    }
+  }
 }
 
 .irs--round .irs-handle {
-  width: 12px;
-  height: 12px;
+  width: 17px;
+  height: 17px;
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
   border: 2px solid #ffffff;
   border-radius: 10px;
-  top: 32px;
+  top: 14px;
   box-shadow: none;
 }
 
@@ -21,19 +68,12 @@
   border: 1px solid $dark25;
   box-sizing: border-box;
   border-radius: 3px;
+  top: 20px;
 }
 
 .irs--round .irs-bar {
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
   border-radius: 3px;
-  top: 36px;
+  top: 20px;
   height: 6px;
-}
-
-.irs--round .irs-from,
-.irs--round .irs-to,
-.irs--round .irs-single,
-.irs--round .irs-min,
-.irs--round .irs-max {
-  opacity: 0;
 }

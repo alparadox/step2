@@ -1,4 +1,8 @@
 mixin range-slider(options)
   .range-slider
-    input.range-slider__data(type="text" name='data')
+    .range-slider__text-wrapper
+      p.range-slider__text= options.text
+    .range-slider__number-wrapper
+      p.range-slider__from
+      p.range-slider__to
     input.range-slider__input.js-range-slider(type="text" name='slider' value='slider')

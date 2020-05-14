@@ -9,6 +9,7 @@ include ../components/buttons/buttons.pug
 include ../components/rate-button/rate-button.pug
 include ../components/subscription-text-field/subscription-text-field.pug
 include ../components/range-slider/range-slider.pug
+include ../components/like-button/like-button.pug
 
 doctype
 html
@@ -61,7 +62,9 @@ html
     +masked-text-field ({type: 'text', name: 'date', text: 'ДД.ММ.ГГГГ'})
     br
     br
-    +range-slider ()
+    +range-slider ({text:'Range Slider'})
     br
     br
-    
+    +like-button ({number: '12'})
+    +like-button ({number: '2'})
+    +like-button ({number: '7'})

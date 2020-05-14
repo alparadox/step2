@@ -1,0 +1,10 @@
+mixin review(options)
+  .review__wrapper-up
+    .review__image 
+    .review__name-date
+      p.review__name
+      p.review__date
+  .review__wrapper-down
+    .review__like
+      +like-button ({number: '12'})
+    p.review__text= options.text

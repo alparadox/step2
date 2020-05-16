@@ -11,6 +11,7 @@ include ../components/subscription-text-field/subscription-text-field.pug
 include ../components/range-slider/range-slider.pug
 include ../components/like-button/like-button.pug
 include ../components/review/review.pug
+include ../components/pagination/pagination.pug
 
 doctype
 html
@@ -74,4 +75,4 @@ html
     +review({name: 'Мурад Сарафанов', date: '5 дней назад', text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
     br
     br
-    
+    +pagination()

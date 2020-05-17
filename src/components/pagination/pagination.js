@@ -1,11 +1,21 @@
 $(document).ready(() => {
-  $('.pagination-container').pagination({
-    dataSource: [1, 2, 3, 4, 5, 6, 7],
+  $(".pagination__container").pagination({
+    dataSource: function (done) {
+      var result = [];
+      for (var i = 1; i < 16; i++) {
+        result.push(i);
+      }
+      done(result);
+    },
     pageSize: 1,
-
-    /*  callback: function (data, pagination) {
-       var html = template(data);
-       $('.data-container').html(html);
-     } */
-  })
+    autoHidePrevious: true,
+    autoHideNext: true,
+    pageRange: 1,
+    prevText: "arrow_back",
+    nextText: "arrow_forward",
+    afterRender: function (data, pagination) {
+      $(".paginationjs-prev").addClass("material-icons");
+      $(".paginationjs-next>a").addClass("material-icons");
+    },
+  });
 });

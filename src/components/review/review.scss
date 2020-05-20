@@ -1,0 +1,63 @@
+.review {
+  &__wrapper-up {
+    width: 100%;
+    max-width: 711px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+
+  &__image {
+    background-image: url(../images/form-elements/muratsafanof.png);
+    width: 47.67px;
+    height: 48px;
+    background-position: -20px -10px;
+  }
+
+  &__name-date {
+    width: 100%;
+    max-width: 220.45px;
+    margin-left: 9.93px;
+  }
+
+  &__name {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark75;
+  }
+
+  &__date {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark75;
+  }
+
+  &__wrapper-down {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__like {
+    margin-top: 1px;
+    margin-left: 3.97px;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 653px;
+    height: 72px;
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: dark75;
+    margin-left: 14.31px;
+  }
+}

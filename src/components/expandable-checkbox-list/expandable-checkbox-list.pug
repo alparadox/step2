@@ -1,0 +1,11 @@
+mixin expandable-checkbox-list(options)
+  p.expandable-checkbox-list__text 
+    span.expandable-checkbox-list__title Expandable checkbox list
+    span.expandable-checkbox-list__button.material-icons expand_more
+  .expandable-checkbox-list__bonus
+    +checkbox({text:'Завтрак', name:'expandable-checkbox'})
+    +checkbox({text:'Письменный стол', name:'expandable-checkbox'})
+    +checkbox({text:'Стул для кормления', name:'expandable-checkbox'})
+    +checkbox({text:'Кроватка', name:'expandable-checkbox'})
+    +checkbox({text:'Телевизор', name:'expandable-checkbox'})
+    +checkbox({text:'Шампунь', name:'expandable-checkbox'})

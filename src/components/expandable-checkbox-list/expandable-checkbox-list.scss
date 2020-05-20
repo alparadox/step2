@@ -1,0 +1,63 @@
+.expandable-checkbox-list {
+  &__text {
+    display: flex;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $dark100;
+  }
+
+  &__button {
+    transform: rotate(-180deg);
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $dark50;
+    width: 24px;
+    height: 15px;
+    margin-left: 40px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    &_expand-rotation {
+      transform: rotate(-360deg);
+      width: 24px;
+      height: 15px;
+      margin-right: 40px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+  }
+
+  &__bonus {
+    width: 100%;
+    max-width: 266px;
+    margin-top: 8px;
+
+    &_hidden-text {
+      display: none;
+    }
+  }
+}
+
+.checkbox__text {
+  margin-top: 10px;
+}

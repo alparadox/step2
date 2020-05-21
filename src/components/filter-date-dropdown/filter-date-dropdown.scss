@@ -1,1 +1,76 @@
-@import '../../node_modules/air-datepicker/dist/css/datepicker.css';
+@import "../../node_modules/air-datepicker/dist/css/datepicker.css";
+
+.filter-date-dropdown {}
+
+.datepicker--nav-title {
+  font-family: $quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  text-align: center;
+  color: $dark100;
+}
+
+.datepicker--content {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $dark50;
+}
+
+.datepicker--cell.-current- {
+  width: 39.88px;
+  height: 40px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 22px;
+  color: white;
+  font-weight: bold;
+}
+
+.datepicker--cell-day {
+  width: 39.88px;
+  height: 40px;
+}
+
+.datepicker--cell.-selected- {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  color: white;
+  font-weight: bold;
+}
+
+.datepicker--cell.-in-range- {
+  //background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  //opacity: 0.25;
+}
+
+.datepicker--day-name {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $purple;
+}
+
+.datepicker--button {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

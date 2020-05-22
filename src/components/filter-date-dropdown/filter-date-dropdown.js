@@ -11,6 +11,10 @@ $(document).ready(() => {
     },
     prevHtml: 'arrow_back',
     nextHtml: 'arrow_forward',
+    autoClose: true,
+    onShow: function (inst, animationCompleted) {
+      $('.datepicker--buttons').append('<span class="datepicker--button"> Применить </span>');
+    },
   });
   $('.datepicker--nav-action').addClass('material-icons');
 });

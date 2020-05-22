@@ -74,3 +74,15 @@
   align-items: center;
   justify-content: flex-start;
 }
+
+.datepicker--nav-action {
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $purple;
+}

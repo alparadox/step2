@@ -12,9 +12,8 @@ $(document).ready(() => {
     prevHtml: 'arrow_back',
     nextHtml: 'arrow_forward',
     autoClose: true,
-    onShow: function (inst, animationCompleted) {
-      $('.datepicker--buttons').append('<span class="datepicker--button"> Применить </span>');
-    },
+    onShow: function (inst, animationCompleted) {},
   });
   $('.datepicker--nav-action').addClass('material-icons');
+  $('.datepicker--buttons').append('<span class="datepicker--button"> Применить </span>');
 });

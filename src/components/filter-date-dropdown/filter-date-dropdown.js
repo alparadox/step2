@@ -1,19 +1,21 @@
 $(document).ready(() => {
-  $('.filter-date-dropdown').datepicker({
+  $(".filter-date-dropdown").datepicker({
     inline: true,
-    multipleDatesSeparator: ' - ',
+    multipleDatesSeparator: " - ",
     range: true,
     clearButton: true,
     navTitles: {
-      days: 'MM yyyy',
-      months: 'yyyy',
-      years: 'yyyy1 - yyyy2',
+      days: "MM yyyy",
+      months: "yyyy",
+      years: "yyyy1 - yyyy2",
     },
-    prevHtml: 'arrow_back',
-    nextHtml: 'arrow_forward',
+    prevHtml: "arrow_back",
+    nextHtml: "arrow_forward",
     autoClose: true,
     onShow: function (inst, animationCompleted) {},
   });
-  $('.datepicker--nav-action').addClass('material-icons');
-  $('.datepicker--buttons').append('<span class="datepicker--button"> Применить </span>');
+  $(".datepicker--nav-action").addClass("material-icons");
+  $(".datepicker--buttons").append(
+    '<span class="datepicker--button button-aplly"> Применить </span>'
+  );
 });

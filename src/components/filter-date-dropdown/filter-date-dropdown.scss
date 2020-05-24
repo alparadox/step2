@@ -1,6 +1,29 @@
 @import "../../node_modules/air-datepicker/dist/css/datepicker.css";
 
-.filter-date-dropdown {}
+.filter-date-dropdown {
+  width: 266px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid $dark25;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+
+  &__text {
+    width: 44px;
+    height: 44px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $dark50;
+    cursor: pointer;
+  }
+}
 
 .datepicker--nav-title {
   font-family: $quicksand;
@@ -22,11 +45,10 @@
   align-items: center;
   text-align: center;
   color: $dark50;
+  padding: 25px 19.67px 10.44px 21.2px;
 }
 
 .datepicker--cell.-current- {
-  width: 39.88px;
-  height: 40px;
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
   border-radius: 22px;
   color: white;
@@ -45,9 +67,22 @@
   font-weight: bold;
 }
 
-.datepicker--cell.-in-range- {
-  //background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  //opacity: 0.25;
+.datepicker--days-names {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $purple;
+  margin: 0;
+}
+
+
+.datepicker {
+  width: 320px;
 }
 
 .datepicker--day-name {
@@ -60,6 +95,9 @@
   align-items: center;
   text-align: center;
   color: $purple;
+  text-transform: none;
+  width: 39.88px;
+  height: 40px;
 }
 
 .datepicker--button {
@@ -67,12 +105,12 @@
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 15px;
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
+  padding-left: 16px;
 }
 
 .datepicker--nav-action {
@@ -89,8 +127,22 @@
 
 .datepicker--nav {
   border-bottom-color: white;
+  padding: 15px 16px 0 16px;
 }
 
 .datepicker--buttons {
   border-top-color: white;
+}
+
+.button-aplly {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $purple;
+  display: flex;
+  align-items: slex-start;
+  justify-content: flex-end;
+  padding-right: 16px;
 }

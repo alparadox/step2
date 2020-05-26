@@ -1,6 +1,57 @@
 @import "../../node_modules/air-datepicker/dist/css/datepicker.css";
 
-.filter-date-dropdown {}
+.filter-date-dropdown {
+  position: relative;
+  width: 266px;
+
+  &__calendar {
+    width: 266px;
+    height: 44px;
+    background: #ffffff;
+    border: 1px solid $dark25;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark75;
+    text-transform: lowercase;
+  }
+
+  &__text {
+    width: 44px;
+    height: 44px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $dark50;
+    cursor: pointer;
+    position: absolute;
+    left: 232px;
+    top: 1px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    &_expand-rotation {
+      transform: rotate(-180deg);
+      left: 212px;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+  }
+}
 
 .datepicker--nav-title {
   font-family: $quicksand;
@@ -22,12 +73,11 @@
   align-items: center;
   text-align: center;
   color: $dark50;
+  padding: 25px 19.67px 10.44px 21.2px;
 }
 
 .datepicker--cell.-current- {
-  width: 39.88px;
-  height: 40px;
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
   border-radius: 22px;
   color: white;
   font-weight: bold;
@@ -39,15 +89,27 @@
 }
 
 .datepicker--cell.-selected- {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 22px;
   color: white;
   font-weight: bold;
 }
 
-.datepicker--cell.-in-range- {
-  //background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  //opacity: 0.25;
+.datepicker--days-names {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $purple;
+  margin: 0;
+}
+
+.datepicker {
+  width: 320px;
 }
 
 .datepicker--day-name {
@@ -60,6 +122,38 @@
   align-items: center;
   text-align: center;
   color: $purple;
+  text-transform: none;
+  width: 39.88px;
+  height: 40px;
+}
+
+.-range-from-:after {
+  content: '';
+  width: 39.88px;
+  height: 40px;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0.25;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+}
+
+.-range-to-:after {
+  content: '';
+  width: 39.88px;
+  height: 40px;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0.25;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+}
+
+.datepicker--cell.-in-range- {
+  background: rgba(188, 156, 255, 0.25);
+  color: $dark50;
 }
 
 .datepicker--button {
@@ -67,10 +161,49 @@
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 15px;
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
+  padding-left: 16px;
+  margin-bottom: 3px;
+}
+
+.datepicker--nav-action {
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $purple;
+}
+
+.datepicker--nav {
+  border-bottom-color: white;
+  padding: 15px 16px 0 16px;
+}
+
+.datepicker--buttons {
+  border-top-color: white;
+}
+
+.datepicker--pointer {
+  display: none;
+}
+
+.button-aplly {
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $purple;
+  display: flex;
+  align-items: slex-start;
+  justify-content: flex-end;
+  padding-right: 16px;
 }

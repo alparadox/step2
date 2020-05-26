@@ -1,6 +1,6 @@
 $(document).ready(() => {
   $(".filter-date-dropdown__calendar").datepicker({
-    //inline: true,
+    inline: true,
     multipleDatesSeparator: " - ",
     range: true,
     clearButton: true,
@@ -21,21 +21,21 @@ $(document).ready(() => {
     '<span class="datepicker--button button-aplly"> Применить </span>'
   );
 
+  let myDatepicker = $('.filter-date-dropdown__calendar').data('datepicker');
+
   $('.filter-date-dropdown__text').click(function () {
     $('.filter-date-dropdown__text').toggleClass('filter-date-dropdown__text_expand-rotation');
 
     if ($('.filter-date-dropdown__text').hasClass('filter-date-dropdown__text_expand-rotation')) {
-      let myDatepicker1 = $('.filter-date-dropdown__calendar').data('datepicker');
-      myDatepicker1.show();
+      myDatepicker.show();
     } else {
-      let myDatepicker2 = $('.filter-date-dropdown__calendar').data('datepicker');
-      myDatepicker2.hide();
+      myDatepicker.hide();
     }
 
   });
 
   $(".button-aplly").click(function () {
-    let myDatepicker = $('.filter-date-dropdown__calendar').data('datepicker');
     myDatepicker.hide();
+    $('.filter-date-dropdown__text').removeClass('filter-date-dropdown__text_expand-rotation');
   });
 });

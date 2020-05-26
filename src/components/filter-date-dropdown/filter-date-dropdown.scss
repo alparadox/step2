@@ -127,6 +127,35 @@
   height: 40px;
 }
 
+.-range-from-:after {
+  content: '';
+  width: 39.88px;
+  height: 40px;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0.25;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+}
+
+.-range-to-:after {
+  content: '';
+  width: 39.88px;
+  height: 40px;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0.25;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+}
+
+.datepicker--cell.-in-range- {
+  background: rgba(188, 156, 255, 0.25);
+  color: $dark50;
+}
+
 .datepicker--button {
   font-family: $montserrat;
   font-style: normal;
@@ -160,6 +189,10 @@
 
 .datepicker--buttons {
   border-top-color: white;
+}
+
+.datepicker--pointer {
+  display: none;
 }
 
 .button-aplly {

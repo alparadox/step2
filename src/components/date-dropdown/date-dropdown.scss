@@ -1,0 +1,60 @@
+.date-dropdown {
+  &__min-date {
+    width: 150px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid $dark25;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  &__max-date {
+    width: 150px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid $dark25;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  &__wrapper-min {
+    position: relative;
+    width: 150px;
+    height: 44px;
+  }
+
+  &__wrapper-max {
+    position: relative;
+    width: 150px;
+    height: 44px;
+  }
+
+  &__text {
+    width: 44px;
+    height: 44px;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $dark50;
+    cursor: pointer;
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    right: -10px;
+
+    &_expand-rotation {
+      transform: rotate(-180deg);
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+  }
+}

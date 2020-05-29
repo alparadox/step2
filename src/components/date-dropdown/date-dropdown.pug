@@ -1,4 +1,8 @@
 mixin date-dropdown(options)
   .date-dropdown
-    input.date-dropdown__min-date(type="text")
-    input.date-dropdown__max-date(type="text")
+    .date-dropdown__wrapper-min
+      .date-dropdown__text.material-icons expand_more
+      input.date-dropdown__min-date(type="text")
+    .date-dropdown__wrapper-max
+      .date-dropdown__text.material-icons expand_more
+      input.date-dropdown__max-date(type="text")

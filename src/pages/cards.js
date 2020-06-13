@@ -1,1 +1,1 @@
-import '../components/search-cards/search-cards.js';
+import '../components/search-card/search-card.js';

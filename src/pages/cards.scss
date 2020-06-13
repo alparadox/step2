@@ -2,8 +2,13 @@
 @import 'common/fonts.scss';
 @import 'common/variables.scss';
 @import 'common/global.scss';
-@import '../components/search-cards/search-cards.scss';
+@import '../components/search-card/search-card.scss';
 
 body {
   background: #E5E5E5;
+}
+
+.test {
+  margin: 50px auto;
+  width: 500px;
 }

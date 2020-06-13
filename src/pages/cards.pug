@@ -1,0 +1,15 @@
+include ../components/search-cards/search-cards.pug
+
+doctype
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='initial-scale=1.0, width=device-width')
+    meta(name='keywords' content='cards')
+    meta(name='description' content='Cards')
+    title Cards
+    link(rel='stylesheet' href='cards.scss' type='text/css')
+    script(src='jquery-for-parcel.js')
+    script(src='cards.js')
+  body
+    +search-cards()

@@ -1,0 +1,15 @@
+include ../date-dropdown/date-dropdown.pug
+include ../dropdown/dropdown.pug
+include ../buttons/buttons.pug
+
+mixin search-card(options)
+  .search-card
+    p.search-card__title Найдём номера под ваши пожелания
+    .search-card__date-dropdown
+      +date-dropdown({text1: 'прибытие', text2: 'выезд'})
+    .search-card__dropdown
+      p.search-card__dropdown-title гости
+      .search-card__dropdown-element
+        +dropdown({size: 'no'})
+    .search-card__button
+      +button-long ({text: "подобрать номер"})

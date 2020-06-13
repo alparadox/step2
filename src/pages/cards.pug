@@ -1,4 +1,5 @@
-include ../components/search-cards/search-cards.pug
+include ../components/search-card/search-card.pug
+include ../components/registration-card/registration-card.pug
 
 doctype
 html
@@ -12,4 +13,7 @@ html
     script(src='jquery-for-parcel.js')
     script(src='cards.js')
   body
-    +search-cards()
+    .test
+      +search-card()
+      br
+      +registration-card()

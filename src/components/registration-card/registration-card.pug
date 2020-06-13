@@ -1,0 +1,31 @@
+include ../text-field/text-field.pug
+include ../radio/radio.pug
+include ../toggle/toggle.pug
+include ../buttons/buttons.pug
+
+mixin registration-card(options)
+  .registration-card
+    p.registration-card__title Регистрация аккаунта
+    .registration-card__name
+      +text-field({type: 'text', name: 'name', text: 'Имя'})
+    .registration-card__surname
+      +text-field({type: 'text', name: 'surname', text: 'Фамилия'})
+    .registration-card__male
+      +radio({name:'male', text:'Мужчина', text2:'Женщина', value:'male', value2:'female'})
+    .registration-card__date
+      p.registration-card__date-text дата рождения
+      .registration-card__date-number
+        +masked-text-field ({type: 'text', name: 'date', text: 'ДД.ММ.ГГГГ'})
+    p.registration-card__text данные для входа в сервис
+    .registration-card__email
+      +text-field({type: 'text', name: 'email', text: 'Email'})
+    .registration-card__password
+      +text-field({type: 'text', name: 'password', text: 'Пароль'})
+    .registration-card__toggle
+      +toggle()
+    .registration-card__button
+      +button-long({text: "перейти к оплате"})
+    .registration-card__sign-in
+      p.registration-card__sign-in-info Уже есть аккаунт на Toxin
+      .registration-card__sign-in-button
+        +button-transparent({text: "войти"})

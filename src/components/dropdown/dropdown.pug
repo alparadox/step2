@@ -1,5 +1,8 @@
 mixin dropdown(options)
-  .iqdropdown
+  -
+    let dropdownSizeClass = "iqdropdown"
+      dropdownSizeClass += (options.size == "small") ? " iqdropdown_small" : ""
+  div(class= dropdownSizeClass)
     p.iqdropdown-selection
     .iqdropdown-menu
       .iqdropdown-menu-option(data-id="item1")
@@ -12,5 +15,5 @@ mixin dropdown(options)
         .iqdropdown__wrapper
           p.iqdropdown-item Ванные комнаты
       .iqdropdown__footer
-        span Очистить
-        span Применить
+        span.iqdropdown__erase-button Очистить
+        span.iqdropdown__apply-button Применить

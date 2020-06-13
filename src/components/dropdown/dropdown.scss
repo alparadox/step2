@@ -4,11 +4,50 @@
   background: #ffffff;
   border: 1px solid $dark25;
   box-sizing: border-box;
-  border-radius: 2px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  width: 266px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width: 320px;
   height: 44px;
+
+  &_small {
+    width: 266px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid $dark50;
+  }
+
+  &__footer {
+    padding-left: 14px;
+    padding-right: 6px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+    margin-bottom: 12px;
+  }
+
+  &__erase-button {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+    cursor: pointer;
+  }
+
+  &__apply-button {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $purple;
+    cursor: pointer;
+  }
 }
 
 .iqdropdown .iqdropdown-selection {
@@ -21,7 +60,7 @@
 }
 
 .iqdropdown.menu-open {
-  border: 1px solid $dark25;
+  border: 1px solid $dark50;
 }
 
 /* .iqdropdown .iqdropdown-item-controls button.button-decrement {
@@ -82,15 +121,15 @@
   padding: 0 7px 0 15px;
 
   &:first-child {
-    padding-top: 7px;
+    padding-top: 11px;
   }
 
   &:nth-child(n + 2) {
-    margin-top: 10px;
+    margin-top: 12px;
   }
 
   &:nth-child(n + 3) {
-    margin-top: 6px;
+    margin-top: 7px;
   }
 }
 
@@ -98,13 +137,15 @@
   height: 30px;
   width: 92px;
   justify-content: space-between;
+  margin-right: -2px;
+  margin-top: -1px;
 }
 
 .iqdropdown .iqdropdown-item-controls button {
   height: 30px;
   width: 30px;
   border-radius: 100%;
-  padding: 0;
+  padding: 0px;
 }
 
 .iqdropdown .iqdropdown-item-controls button.button-decrement,
@@ -143,11 +184,13 @@
 .iqdropdown .icon-increment {
   font-family: $montserrat;
   font-style: normal;
+
   &::after {
     content: "+";
-    top: -2px;
+    top: -3px;
     left: 0px;
   }
+
   &::before {
     background: white;
   }
@@ -158,7 +201,7 @@
 }
 
 .iqdropdown .iqdropdown-menu {
-  top: 45px;
+  top: 44px;
   box-shadow: none;
   border: 1px solid $dark50;
   box-sizing: border-box;

@@ -1,0 +1,17 @@
+include ../text-field/text-field.pug
+include ../radio/radio.pug
+include ../buttons/buttons.pug
+
+mixin sign-in-card(options)
+  .sign-in-card
+    p.sign-in-card__title Войти
+    .sign-in-card__email
+      +text-field({type: 'text', name: 'email', text: 'Email'})
+    .sign-in-card__password
+      +text-field({type: 'text', name: 'password', text: 'Пароль'})
+    .sign-in-card__button
+      +button-long({text: "войти"})
+    .sign-in-card__create
+      p.sign-in-card__create-info Нет аккаунта на Toxin?
+      .sign-in-card__create-button
+        +button-transparent({text: "создать"})

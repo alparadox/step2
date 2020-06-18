@@ -2,6 +2,7 @@ include ../components/search-card/search-card.pug
 include ../components/registration-card/registration-card.pug
 include ../components/sign-in-card/sign-in-card.pug
 include ../components/price-card/price-card.pug
+include ../components/calendar-card/calendar-card.pug
 
 doctype
 html
@@ -23,4 +24,7 @@ html
       +sign-in-card()
       br
       +price-card()
+      br
+      .calendar
+        +filter-date-dropdown()
       br

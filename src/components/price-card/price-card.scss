@@ -1,9 +1,9 @@
-@import '../date-dropdown/date-dropdown.scss';
-@import '../dropdown/dropdown.scss';
-@import '../buttons/buttons.scss';
+@import "../date-dropdown/date-dropdown.scss";
+@import "../dropdown/dropdown.scss";
+@import "../buttons/buttons.scss";
 
 .price-card {
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -14,17 +14,27 @@
   &__title {
     display: flex;
     justify-content: space-between;
+    margin-top: 3px;
   }
 
-  &__wripper-title {}
+  &__wripper-title {
+  }
+
+  &__title-number {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: $dark100;
+  }
 
   &__number {
     font-family: $quicksand;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 24px;
     color: $dark100;
+    padding-left: 4px;
   }
 
   &__type {
@@ -32,9 +42,13 @@
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 15px;
     text-transform: uppercase;
     color: $purple;
+    padding-left: 5px;
+  }
+
+  &__wripper-price {
+    margin-top: 4px;
   }
 
   &__price-day {
@@ -42,7 +56,15 @@
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+    padding-right: 2px;
+  }
+
+  &__type-day {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
     color: rgba(31, 32, 65, 0.5);
   }
 
@@ -51,7 +73,7 @@
   }
 
   &__dropdown {
-    margin-top: 20px;
+    margin-top: 19px;
   }
 
   &__dropdown-title {
@@ -74,17 +96,20 @@
     font-weight: normal;
     font-size: 14px;
     color: $dark75;
+    margin-right: -1px;
   }
 
   &__price-n-day {
     display: flex;
     justify-content: space-between;
-    margin-top: 20.56px;
+    margin-top: 19px;
   }
 
-  &__formula {}
+  &__formula {
+  }
 
-  &__cost-room {}
+  &__cost-room {
+  }
 
   &__discount {
     display: flex;
@@ -92,7 +117,13 @@
     margin-top: 10px;
   }
 
-  &__info-discount {}
+  &__wrapper-discount {
+    display: flex;
+  }
+
+  &__info-discount {
+    width: 219px;
+  }
 
   &__info {
     border: 1px solid rgba(31, 32, 65, 0.25);
@@ -107,19 +138,30 @@
     line-height: 14px;
     text-align: center;
     color: rgba(31, 32, 65, 0.25);
+    margin-top: 1px;
   }
 
-  &__cost-discount {}
+  &__cost-discount {
+  }
 
   &__more-services {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 12px;
   }
 
-  &__info-services {}
+  &__wrapper-services {
+    display: flex;
+  }
 
-  &__cost-services {}
+  &__info-services {
+    width: 219px;
+    line-height: 18px;
+    margin-top: 1px;
+  }
+
+  &__cost-services {
+  }
 
   &__total-cost {
     font-family: $quicksand;
@@ -129,14 +171,24 @@
     color: $dark100;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 32px;
   }
 
-  &__total {}
+  &__total {
+  }
 
-  &__cost {}
+  &__total-liner {
+    box-sizing: border-box;
+    border-bottom: 1px dotted $dark25;
+    width: 182px;
+    margin-bottom: 6px;
+  }
+
+  &__cost {
+    margin-bottom: 1px;
+  }
 
   &__button {
-    margin-top: 20px;
+    margin-top: 19px;
   }
 }

@@ -6,9 +6,12 @@ mixin price-card(options)
   .price-card
     .price-card__title
       span.price-card__wripper-title
-        span.price-card__number № 888
+        span.price-card__title-number №
+        span.price-card__number 888
         span.price-card__type люкс
-      span.price-card__price-day 9 990₽ в сутки
+      span.price-card__wripper-price
+        span.price-card__price-day 9 990₽
+        span.price-card__type-day в сутки
     .price-card__date-dropdown
       +date-dropdown({text1: 'прибытие', text2: 'выезд'})
     .price-card__dropdown
@@ -20,15 +23,18 @@ mixin price-card(options)
         span.price-card__formula 9 990₽ х 4 суток
         span.price-card__cost-room 39 960₽
       .price-card__discount
-        span.price-card__info-discount Сбор за услуги: скидка 2 179₽
-        .price-card__info i
+        .price-card__wrapper-discount
+          span.price-card__info-discount Сбор за услуги: скидка 2 179₽
+          .price-card__info i
         span.price-card__cost-discount 0₽
       .price-card__more-services
-        span.price-card__info-services Сбор за дополнительные услуги
-        .price-card__info i
+        .price-card__wrapper-services
+          span.price-card__info-services Сбор за дополнительные услуги
+          .price-card__info i
         span.price-card__cost-services 300₽
       .price-card__total-cost
         span.price-card__total Итого
+        .price-card__total-liner
         span.price-card__cost 38 081₽
     .price-card__button
       +button-long ({text: "забронировать"})

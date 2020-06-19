@@ -3,6 +3,7 @@ include ../components/registration-card/registration-card.pug
 include ../components/sign-in-card/sign-in-card.pug
 include ../components/price-card/price-card.pug
 include ../components/calendar-card/calendar-card.pug
+include ../components/room-card/room-card.pug
 
 doctype
 html
@@ -28,3 +29,6 @@ html
       .calendar
         +filter-date-dropdown()
       br
+      +room-card({number:"888", type:"люкс", price:"9 990₽", rewiew:"145", count:"5"})
+      br
+

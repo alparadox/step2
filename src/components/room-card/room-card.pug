@@ -1,0 +1,29 @@
+include ../rate-button/rate-button.pug
+
+mixin room-card(options)
+  .room-card
+    .room-card__image
+      .room-card__photo
+      .room-card__right-arrow.material-icons expand_more
+      .room-card__left-arrow.material-icons expand_more
+      .room-card__page
+        .room-card__circle1
+        .room-card__circle2
+        .room-card__circle2
+        .room-card__circle2
+    .room-card__content
+    .room-card__title
+      span.room-card__wripper-title
+        span.room-card__title-number №
+        span.room-card__number= options.number
+        span.room-card__type= options.type
+      span.room-card__wripper-price
+        span.room-card__price-day= options.price
+        span.room-card__type-day в сутки
+    .room-card__line
+    .room-card__reviews
+      .room-card__rate
+        +rate-button({count: options.count})
+      .room-card__review
+        span.room-card__number-review= options.rewiew
+        span.room-card__text-review Отзывов

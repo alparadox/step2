@@ -13,7 +13,53 @@ body {
   background: #E5E5E5;
 }
 
-.test {
-  margin: 50px auto;
-  width: 500px;
+.cards {
+  &__container {
+    margin: 0 auto;
+    max-width: 1440px;
+    min-width: 320px;
+  }
+
+  &__logo {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 64px;
+  }
+
+  &__wrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__container-left {}
+
+  &__search {}
+
+  &__registration {
+    margin-top: 40px;
+  }
+
+  &__container-center {}
+
+  &__price {}
+
+  &__sign-in {
+    margin-top: 40px;
+  }
+
+  &__container-right {}
+
+  &__calendar {
+    width: 320px;
+  }
+
+  &__room-888 {
+    margin-top: 40.5px;
+  }
+
+  &__room-840 {
+    margin-top: 40px;
+  }
 }

@@ -1,20 +1,19 @@
-@import '../rate-button/rate-button.scss';
+@import "../rate-button/rate-button.scss";
 
 .room-card {
   width: 270px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
 
   &__image {
-    display: flex;
-    justify-content: space-between;
-    background-image: url(../images/cards/888.png);
+    //background-image: url(../images/cards/888.png);
     width: 270px;
     height: 152px;
+    position: relative;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
   }
-
-  &__photo {}
 
   &__right-arrow {
     font-size: 24px;
@@ -22,8 +21,11 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
-    transform: rotate(90deg);
+    color: #ffffff;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 63px;
+    right: 10px;
   }
 
   &__left-arrow {
@@ -32,18 +34,24 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
-    transform: rotate(-90deg);
+    color: #ffffff;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 63px;
+    left: 10px;
   }
 
   &__page {
     display: flex;
+    position: absolute;
+    right: 11px;
+    top: 129px;
   }
 
   &__circle1 {
     width: 7.5px;
     height: 7.49px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
     border-radius: 100%;
     margin-right: 3.75px;
@@ -52,7 +60,7 @@
   &__circle2 {
     width: 7.5px;
     height: 7.49px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
     box-sizing: border-box;
     box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
     border-radius: 100%;
@@ -60,7 +68,7 @@
   }
 
   &__content {
-    margin: 0 17px 19px 20px;
+    padding: 20px 17px 19px 20px;
   }
 
   &__title {
@@ -68,7 +76,8 @@
     justify-content: space-between;
   }
 
-  &__wripper-title {}
+  &__wripper-title {
+  }
 
   &__title-number {
     font-family: Quicksand;
@@ -82,7 +91,7 @@
     font-family: $quicksand;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     color: $dark100;
     padding-left: 4px;
   }
@@ -97,7 +106,9 @@
     padding-left: 5px;
   }
 
-  &__wripper-price {}
+  &__wripper-price {
+    margin-top: 3px;
+  }
 
   &__price-day {
     font-family: $montserrat;
@@ -106,6 +117,7 @@
     font-size: 14px;
     color: rgba(31, 32, 65, 0.5);
     padding-right: 2px;
+    margin-right: 2px;
   }
 
   &__type-day {
@@ -120,16 +132,21 @@
     border-bottom: 1px solid rgba(31, 32, 65, 0.1);
     box-sizing: border-box;
     width: 230px;
+    margin-top: 8px;
   }
 
   &__reviews {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
   }
 
-  &__rate {}
+  &__rate {
+  }
 
-  &__review {}
+  &__review {
+    margin-right: 2px;
+  }
 
   &__number-review {
     font-family: $montserrat;
@@ -138,6 +155,7 @@
     font-size: 14px;
     text-align: right;
     color: $dark50;
+    margin-right: 4px;
   }
 
   &__text-review {

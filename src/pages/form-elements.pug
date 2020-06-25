@@ -16,6 +16,7 @@ include ../components/expandable-checkbox-list/expandable-checkbox-list.pug
 include ../components/filter-date-dropdown/filter-date-dropdown.pug
 include ../components/date-dropdown/date-dropdown.pug
 include ../components/dropdown/dropdown.pug
+include ../components/logo.pug
 
 doctype
 html
@@ -29,73 +30,67 @@ html
     script(src='jquery-for-parcel.js')
     script(src='form-elements.js')
   body
-    +text-field({type: 'text', name: 'email', text: 'Email'})
-    br
-    br
-    +checkbox-buttons()
-    br
-    +radio({name:'male', text:'Мужчина', text2:'Женщина', value:'male', value2:'female'})
-    br
-    br
-    +toggle()
-    br
-    br
-    +rich-checkbox-buttons({title:'Rich Checkbox Buttons'})
-    br
-    +room-info()
-    br
-    +bullet-list({title:'Bullet list'})
-    br
-    +button-painted()
-    br
-    br
-    +button-transparent({text: "click me"})
-    br
-    br
-    +button-text()
-    br
-    br
-    +button-long({text: "перейти к оплате"})
-    br
-    br
-    +rate-button({count:'4'}) 
-    +rate-buttonn({count:'5'})
-    br
-    br
-    +subscription-text-field()
-    br
-    br
-    +masked-text-field ({type: 'text', name: 'date', text: 'ДД.ММ.ГГГГ'})
-    br
-    br
-    +range-slider({text:'Range Slider'})
-    br
-    br
-    +like-button({number: '12'})
-    +like-button({number: '2'})
-    +like-button({number: '7'})
-    br
-    br
-    +review({name: 'Мурад Сарафанов', date: '5 дней назад', text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
-    br
-    br
-    +pagination()
-    br
-    br
-    +expandable-checkbox-list ()
-    br
-    br
-    +filter-date-dropdown()
-    br
-    br
-    +date-dropdown({text1: 'date Dropdown', text2: 'date Dropdown'})
-    br
-    br
-    +dropdown({size: 'no'})
-    br
-    br
-    br
-    br
-    br
-    br
-    br
+    //-
+      +text-field({type: 'text', name: 'email', text: 'Email'})
+      +checkbox-buttons()
+      +radio({name:'male', text:'Мужчина', text2:'Женщина', value:'male', value2:'female'})
+      +toggle()
+      +rich-checkbox-buttons({title:'Rich Checkbox Buttons'})
+      +room-info()
+      +bullet-list({title:'Bullet list'})
+      +button-painted()
+      +button-transparent({text: "click me"})
+      +button-text()
+      +button-long({text: "перейти к оплате"})
+      +rate-button({count:'4'}) 
+      +rate-buttonn({count:'5'})
+      +subscription-text-field()
+      +masked-text-field ({type: 'text', name: 'date', text: 'ДД.ММ.ГГГГ'})
+      +range-slider({text:'Range Slider'})
+      +like-button({number: '12'})
+      +like-button({number: '2'})
+      +like-button({number: '7'})
+      +review({name: 'Мурад Сарафанов', date: '5 дней назад', text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
+      +pagination()
+      +expandable-checkbox-list ()
+      +filter-date-dropdown()
+      +date-dropdown({text1: 'date Dropdown', text2: 'date Dropdown'})
+      +dropdown({size: 'no'})
+
+    .form-element
+      .form-element__logo
+        +logo()
+      .form-element__content
+
+        .form-element__left
+          .form-element__text-field
+            .form-element__text-field-title
+              p.form-element__text-field-text Text Field
+              p.form-element__text-field-description Default
+            .form-element__text-field-element
+          .form-element__text-field-hover
+            .form-element__text-field-hover-title
+              p.form-element__text-field-hover-text Text Field
+              p.form-element__text-field-hover-description Hover / Focus
+            .form-element__text-field-hover-element
+          .form-element__dropdown
+            .form-element__dropdown-title
+              p.form-element__dropdown-text Text Field
+              p.form-element__dropdown-description Default
+            .form-element__dropdown-element
+          .form-element__masked-text-field
+            .form-element__masked-text-field-title
+              p.form-element__masked-text-field-text Text Field
+              p.form-element__masked-text-field-description Default
+            .form-element__masked-text-field-element
+          .form-element__date-dropdown
+          .form-element__filter-date-dropdown
+            .form-element__filter-date-dropdown-title filter date dropdown
+            .form-element__filter-date-dropdown-element
+          .form-element__subscription-text-field
+            .form-element__subscription-text-field-title subscription text field
+            .form-element__subscription-text-field-element
+
+        .form-element__center
+        .form-element__right
+      .form-element__footer

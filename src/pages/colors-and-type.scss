@@ -4,3 +4,66 @@
 @import 'common/global.scss';
 @import '../components/color-block/color-block.scss';
 @import '../components/text-block/text-block.scss';
+
+.color-type {
+  max-width: 1440px;
+  min-width: 320px;
+
+  &__logo {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 149.74px;
+    margin-right: 191px;
+  }
+
+  &__color {}
+
+  &__dark100 {}
+
+  &__dark75 {
+    margin-top: 20px;
+  }
+
+  &__dark50 {
+    margin-top: 20px;
+  }
+
+  &__dark25 {
+    margin-top: 20px;
+  }
+
+  &__dark5 {
+    margin-top: 19px;
+  }
+
+  &__purple {
+    margin-top: 20px;
+  }
+
+  &__green {
+    margin-top: 20px;
+  }
+
+  &__type {}
+
+  &__heading1 {}
+
+  &__heading2 {
+    margin-top: 50px;
+  }
+
+  &__heading3 {
+    margin-top: 52px;
+  }
+
+  &__body {
+    margin-top: 48px;
+    width: 380px;
+  }
+}

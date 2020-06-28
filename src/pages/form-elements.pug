@@ -57,73 +57,127 @@ html
       +date-dropdown({text1: 'date Dropdown', text2: 'date Dropdown'})
       +dropdown({size: 'no'})
 
-    .form-element
-      .form-element__logo
+    .form-elements
+      .form-elements__logo
         +logo()
-      .form-element__content
-        .form-element__left
-          .form-element__text-field
-            .form-element__text-field-title
-              p.form-element__text-field-text Text Field
-              p.form-element__text-field-description Default
-            .form-element__text-field-element
-          .form-element__text-field-hover
-            .form-element__text-field-hover-title
-              p.form-element__text-field-hover-text Text Field
-              p.form-element__text-field-hover-description Hover / Focus
-            .form-element__text-field-hover-element
-          .form-element__dropdown-guest-default
-            .form-element__dropdown-guest-default-title
-              p.form-element__dropdown-guest-default-text Text Field
-              p.form-element__dropdown-guest-default-description Default
-            .form-element__dropdown-guest-default-element
-          .form-element__masked-text-field
-            .form-element__masked-text-field-title
-              p.form-element__masked-text-field-text Text Field
-              p.form-element__masked-text-field-description Default
-            .form-element__masked-text-field-element
-          .form-element__date-dropdown
-          .form-element__filter-date-dropdown
-            .form-element__filter-date-dropdown-title filter date dropdown
-            .form-element__filter-date-dropdown-element
-          .form-element__subscription-text-field
-            .form-element__subscription-text-field-title subscription text field
-            .form-element__subscription-text-field-element
-          .form-element__dropdown-room-default
-            .form-element__dropdown-room-default-title
-              p.form-element__dropdown-room-default-text dropdown
-              p.form-element__dropdown-room-default-description Default
-            .form-element__dropdown-room-default-element
-          .form-element__dropdown-room-expanded
-            .form-element__dropdown-room-expanded-title
-              p.form-element__dropdown-room-expanded-text dropdown
-              p.form-element__dropdown-room-expanded-description Default
-            .form-element__dropdown-room-expanded-element
+      .form-elements__content
+        .form-elements__left
+          .form-elements__text-field
+            .form-elements__text-field-title
+              p.form-elements__text-field-text Text Field
+              p.form-elements__text-field-description Default
+            .form-elements__text-field-element
+              +text-field({type: 'text', name: 'email', text: 'Email'})
+          .form-elements__text-field-hover
+            .form-elements__text-field-hover-title
+              p.form-elements__text-field-hover-text Text Field
+              p.form-elements__text-field-hover-description Hover / Focus
+            .form-elements__text-field-hover-element
+              +text-field({type: 'text', name: 'email', text: 'Email'})
+          .form-elements__dropdown-guest-default
+            .form-elements__dropdown-guest-default-title
+              p.form-elements__dropdown-guest-default-text Text Field
+              p.form-elements__dropdown-guest-default-description Default
+            .form-elements__dropdown-guest-default-element
+              +dropdown({size: 'no'})
+          .form-elements__masked-text-field
+            .form-elements__masked-text-field-title
+              p.form-elements__masked-text-field-text Text Field
+              p.form-elements__masked-text-field-description Default
+            .form-elements__masked-text-field-element
+              +masked-text-field ({type: 'text', name: 'date', text: 'ДД.ММ.ГГГГ'})
+          .form-elements__date-dropdown
+            +date-dropdown({text1: 'date Dropdown', text2: 'date Dropdown'})
+          .form-elements__filter-date-dropdown
+            .form-elements__filter-date-dropdown-title filter date dropdown
+            .form-elements__filter-date-dropdown-element
+              +filter-date-dropdown()
+          .form-elements__subscription-text-field
+            .form-elements__subscription-text-field-title subscription text field
+            .form-elements__subscription-text-field-element
+              +subscription-text-field()
+          .form-elements__dropdown-room-default
+            .form-elements__dropdown-room-default-title
+              p.form-elements__dropdown-room-default-text dropdown
+              p.form-elements__dropdown-room-default-description Default
+            .form-elements__dropdown-room-default-element
+              +dropdown({size: 'small'})
+          .form-elements__dropdown-room-expanded
+            .form-elements__dropdown-room-expanded-title
+              p.form-elements__dropdown-room-expanded-text dropdown
+              p.form-elements__dropdown-room-expanded-description Default
+            .form-elements__dropdown-room-expanded-element
+              +dropdown({size: 'small'})
           .form-elements__expandable-checkbox
-
-        .form-element__center
+            +expandable-checkbox-list ()
+          .form-elements__expandable-checkbox-expanded
+            +expandable-checkbox-list ()
+        .form-elements__center
           .form-elements__checkbox-buttons
-
+            +checkbox-buttons()
           .form-elements__radio-buttons
-            .form-element__radio-buttons-text Radio Buttons
-            .form-element__radio-buttons-element
-
+            .form-elements__radio-buttons-text Radio Buttons
+            .form-elements__radio-buttons-element
+              +radio({name:'male', text:'Мужчина', text2:'Женщина', value:'male', value2:'female'})
           .form-elements__toggle
-            .form-element__toggle-text Toggle
-            .form-element__toggle-element-on
-            .form-element__toggle-element-off
-          
+            .form-elements__toggle-text Toggle
+            .form-elements__toggle-element-on
+              +toggle()
+            .form-elements__toggle-element-off
+              +toggle()
           .form-elements__like-button
-            .form-element__like-button-text like button
-            .form-element__like-button-element
-              .form-element__like-button-2
-              .form-element__like-button-12
-
+            .form-elements__like-button-text like button
+            .form-elements__like-button-element
+              .form-elements__like-button-2
+                +like-button({number: '2'})
+              .form-elements__like-button-12
+                +like-button({number: '12'})
           .form-elements__rate-button
-            .form-element__rate-button-text Toggle
-            .form-element__rate-button-element
-              .form-element__rate-button-4
-              .form-element__rate-button-5
-
-        .form-element__right
-      .form-element__footer
+            .form-elements__rate-button-text Toggle
+            .form-elements__rate-button-element
+              .form-elements__rate-button-4
+                +rate-button({count:'4'}) 
+              .form-elements__rate-button-5
+                +rate-button({count:'5'}) 
+          .form-elements__dropdown-center
+            .form-elements__dropdown-center-text dropdown
+            .form-elements__dropdown-center-element
+              +dropdown({size: 'no'})
+          .form-elements__rich-checkbox
+            +rich-checkbox-buttons({title:'Rich Checkbox Buttons'})
+        .form-elements__right
+          .form-elements__range-slider
+            +range-slider({text:'Range Slider'})
+          .form-elements__buttons
+            .form-elements__buttons-backgraund
+              .form-elements__buttons-backgraund-default
+                +button-painted()
+              .form-elements__buttons-backgraund-hover
+                +button-painted()
+            .form-elements__buttons-border
+              .form-elements__buttons-border-default
+                +button-transparent({text: "click me"})
+              .form-elements__buttons-border-hover
+                +button-transparent({text: "click me"})
+            .form-elements__buttons-text
+              .form-elements__buttons-text-default
+                +button-text()
+              .form-elements__buttons-text-hover
+                +button-text()
+            .form-elements__buttons-long
+              +button-long({text: "перейти к оплате"})
+          .form-elements__pagination
+            .form-elements__pagination-text pagination
+            .form-elements__pagination-element
+              +pagination()
+          .form-elements__dropdown-right
+            .form-elements__dropdown-right-text dropdown
+            .form-elements__dropdown-right-element
+              +dropdown({size: 'no'})
+          .form-elements__bullet-list
+            +bullet-list({title:'Bullet list'})
+      .form-elements__footer
+        .form-elements__room-info
+          +room-info()
+        .form-elements__review
+          +review({name: 'Мурад Сарафанов', date: '5 дней назад', text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})

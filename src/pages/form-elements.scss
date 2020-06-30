@@ -20,3 +20,235 @@
 @import '../components/filter-date-dropdown/filter-date-dropdown.scss';
 @import '../components/date-dropdown/date-dropdown.scss';
 @import '../components/dropdown/dropdown.scss';
+
+.form-elements {
+  &__logo {
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  &__content {
+    margin-left: 141px;
+    margin-top: 52px;
+  }
+
+  &__colomn-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {}
+
+  &__text-field {}
+
+  &__text-field-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text-field-text,
+  &__text-field-hover-text,
+  &__dropdown-guest-default-text,
+  &__masked-text-field-text,
+  &__filter-date-dropdown-title,
+  &__subscription-text-field-title,
+  &__dropdown-room-default-text,
+  &__dropdown-room-expanded-text,
+  &__radio-buttons-text,
+  &__toggle-text,
+  &__like-button-text,
+  &__rate-button-text,
+  &__dropdown-center-text,
+  &__buttons-text,
+  &__pagination-text,
+  &__dropdown-right-text {
+    font-family: $montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $dark100;
+  }
+
+  &__text-field-text {
+    margin-top: 3px;
+  }
+
+  &__text-field-description {
+    font-family: $montserrat;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: right;
+    text-transform: uppercase;
+    color: $dark50;
+    ;
+  }
+
+  &__text-field-element {
+    margin-top: 2px;
+  }
+
+  &__text-field-hover {}
+
+  &__text-field-hover-title {}
+
+  &__text-field-hover-text {}
+
+  &__text-field-hover-description {}
+
+  &__text-field-hover-element {}
+
+  &__dropdown-guest-default {}
+
+  &__dropdown-guest-default-title {}
+
+  &__dropdown-guest-default-text {}
+
+  &__dropdown-guest-default-description {}
+
+  &__dropdown-guest-default-element {}
+
+  &__masked-text-field {}
+
+  &__masked-text-field-title {}
+
+  &__masked-text-field-text {}
+
+  &__masked-text-field-description {}
+
+  &__masked-text-field-element {}
+
+  &__date-dropdown {}
+
+  &__filter-date-dropdown {}
+
+  &__filter-date-dropdown-title {}
+
+  &__filter-date-dropdown-element {}
+
+  &__subscription-text-field {}
+
+  &__subscription-text-field-title {}
+
+  &__subscription-text-field-element {}
+
+  &__dropdown-room-default {}
+
+  &__dropdown-room-default-title {}
+
+  &__dropdown-room-default-text {}
+
+  &__dropdown-room-default-description {}
+
+  &__dropdown-room-default-element {}
+
+  &__dropdown-room-expanded {}
+
+  &__dropdown-room-expanded-title {}
+
+  &__dropdown-room-expanded-text {}
+
+  &__dropdown-room-expanded-description {}
+
+  &__dropdown-room-expanded-element {}
+
+  &__expandable-checkbox {}
+
+  &__expandable-checkbox-expanded {}
+
+  &__center {}
+
+  &__checkbox-buttons {}
+
+  &__radio-buttons {}
+
+  &__radio-buttons-text {}
+
+  &__radio-buttons-element {}
+
+  &__toggle {}
+
+  &__toggle-text {}
+
+  &__toggle-element-on {}
+
+  &__toggle-element-off {}
+
+  &__like-button {}
+
+  &__like-button-text {}
+
+  &__like-button-element {}
+
+  &__like-button-2 {}
+
+  &__like-button-12 {}
+
+  &__rate-button {}
+
+  &__rate-button-text {}
+
+  &__rate-button-element {}
+
+  &__rate-button-4 {}
+
+  &__rate-button-5 {}
+
+  &__dropdown-center {}
+
+  &__dropdown-center-text {}
+
+  &__dropdown-center-element {}
+
+  &__rich-checkbox {}
+
+  &__right {}
+
+  &__range-slider {}
+
+  &__buttons {}
+
+  &__buttons-text {}
+
+  &__buttons-backgraund {}
+
+  &__buttons-backgraund-default {}
+
+  &__buttons-backgraund-hover {}
+
+  &__buttons-border {}
+
+  &__buttons-border-default {}
+
+  &__buttons-border-hover {}
+
+  &__buttons-text {}
+
+  &__buttons-text-default {}
+
+  &__buttons-text-hover {}
+
+  &__buttons-long {}
+
+  &__pagination {}
+
+  &__pagination-text {}
+
+  &__pagination-element {}
+
+  &__dropdown-right {}
+
+  &__dropdown-right-text {}
+
+  &__dropdown-right-element {}
+
+  &__bullet-list {}
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__room-info {}
+
+  &__review {}
+}

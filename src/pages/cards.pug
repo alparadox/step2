@@ -3,6 +3,8 @@ include ../components/registration-card/registration-card.pug
 include ../components/sign-in-card/sign-in-card.pug
 include ../components/price-card/price-card.pug
 include ../components/calendar-card/calendar-card.pug
+include ../components/room-card/room-card.pug
+include ../components/logo.pug
 
 doctype
 html
@@ -16,15 +18,24 @@ html
     script(src='jquery-for-parcel.js')
     script(src='cards.js')
   body
-    .test
-      +search-card()
-      br
-      +registration-card()
-      br
-      +sign-in-card()
-      br
-      +price-card()
-      br
-      .calendar
-        +filter-date-dropdown()
-      br
+    .cards__container
+      .cards__logo
+        +logo
+      .cards__wrapper
+        .cards__container-left
+          .cards__search
+            +search-card()
+          .cards__registration
+            +registration-card()
+        .cards__container-center
+          .cards__price
+            +price-card()
+          .cards__sign-in
+            +sign-in-card()
+        .cards__container-right
+          .cards__calendar
+            +filter-date-dropdown()
+          .cards__room-888
+            +room-card({number:"888", type:"люкс", price:"9 990₽", rewiew:"145", countStars:"5", image:"background-image: url(../images/cards/888.png);"})
+          .cards__room-840
+            +room-card({number:"840", type:" ", price:"9 900₽", rewiew:"65", countStars:"4", image:"background-image: url(../images/cards/840.png);"})

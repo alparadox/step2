@@ -1,5 +1,7 @@
 include ../components/color-block/color-block.pug
 include ../components/text-block/text-block.pug
+include ../components/logo.pug
+
 doctype
 html
   head
@@ -10,14 +12,31 @@ html
     title Colors and Type
     link(rel='stylesheet' href='colors-and-type.scss' type='text/css')
   body
-    +color-block ({name: 'Dark Shade 100%', code: '#1F2041', color: 'dark-100'})
-    +color-block ({name: 'Dark Shade 75%', code: '#1F2041', color: 'dark-75'})
-    +color-block ({name: 'Dark Shade 50%', code: '#1F2041', color: 'dark-50'})
-    +color-block ({name: 'Dark Shade 25%', code: '#1F2041', color: 'dark-25'})
-    +color-block ({name: 'Dark Shade 5%', code: '#1F2041', color: 'dark-5'})
-    +color-block ({name: 'Purple', code: '#BC9CFF', color: 'purple'})
-    +color-block ({name: 'Green', code: '#6FCF97', color: 'green'})
-    +text-block ({tagInfo: 'H1', textInfo: 'This one is the sub-section or widget title', tag: 'h1', text: 'h1'})
-    +text-block ({tagInfo: 'H2', textInfo: 'Next one is the item title inside widgets', tag:'h2', text:'h2'})
-    +text-block ({tagInfo: 'h3', textInfo: 'This is a label or CTA text', tag:'h3', text:'h3'})
-    +text-block ({tagInfo: 'Body', textInfo: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', tag:'body', text:'body'})
+    .color-type
+      .color-type__logo
+        +logo
+      .color-type__wrapper
+        .color-type__color
+          .color-type__dark100
+            +color-block ({name: 'Dark Shade 100%', code: '#1F2041', color: 'dark-100'})
+          .color-type__dark75
+            +color-block ({name: 'Dark Shade 75%', code: '#1F2041', color: 'dark-75'})
+          .color-type__dark50
+            +color-block ({name: 'Dark Shade 50%', code: '#1F2041', color: 'dark-50'})
+          .color-type__dark25
+            +color-block ({name: 'Dark Shade 25%', code: '#1F2041', color: 'dark-25'})
+          .color-type__dark5
+            +color-block ({name: 'Dark Shade 5%', code: '#1F2041', color: 'dark-5'})
+          .color-type__purple
+            +color-block ({name: 'Purple', code: '#BC9CFF', color: 'purple'})
+          .color-type__green
+            +color-block ({name: 'Green', code: '#6FCF97', color: 'green'})
+        .color-type__type
+          .color-type__heading1
+            +text-block ({tagInfo: 'H1', textInfo: 'This one is the sub-section or widget title', tag: 'h1', text: 'h1'})
+          .color-type__heading2
+            +text-block ({tagInfo: 'H2', textInfo: 'Next one is the item title inside widgets', tag:'h2', text:'h2'})
+          .color-type__heading3
+            +text-block ({tagInfo: 'h3', textInfo: 'This is a label or CTA text', tag:'h3', text:'h3'})
+          .color-type__body
+            +text-block ({tagInfo: 'Body', textInfo: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.', tag:'body', text:'body'})

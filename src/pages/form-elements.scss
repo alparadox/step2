@@ -22,21 +22,70 @@
 @import '../components/dropdown/dropdown.scss';
 
 .form-elements {
-  &__logo {}
+  &__logo {
+    padding-left: 30px;
+    padding-top: 30px;
+  }
 
-  &__content {}
+  &__content {
+    margin-left: 141px;
+    margin-top: 52px;
+  }
+
+  &__colomn-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__left {}
 
   &__text-field {}
 
-  &__text-field-title {}
+  &__text-field-title {
+    display: flex;
+    justify-content: space-between;
+  }
 
-  &__text-field-text {}
+  &__text-field-text,
+  &__text-field-hover-text,
+  &__dropdown-guest-default-text,
+  &__masked-text-field-text,
+  &__filter-date-dropdown-title,
+  &__subscription-text-field-title,
+  &__dropdown-room-default-text,
+  &__dropdown-room-expanded-text,
+  &__radio-buttons-text,
+  &__toggle-text,
+  &__like-button-text,
+  &__rate-button-text,
+  &__dropdown-center-text,
+  &__buttons-text,
+  &__pagination-text,
+  &__dropdown-right-text {
+    font-family: $montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $dark100;
+  }
 
-  &__text-field-description {}
+  &__text-field-text {
+    margin-top: 3px;
+  }
 
-  &__text-field-element {}
+  &__text-field-description {
+    font-family: $montserrat;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: right;
+    text-transform: uppercase;
+    color: $dark50;
+    ;
+  }
+
+  &__text-field-element {
+    margin-top: 2px;
+  }
 
   &__text-field-hover {}
 
@@ -158,6 +207,8 @@
 
   &__buttons {}
 
+  &__buttons-text {}
+
   &__buttons-backgraund {}
 
   &__buttons-backgraund-default {}
@@ -192,7 +243,10 @@
 
   &__bullet-list {}
 
-  &__footer {}
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__room-info {}
 

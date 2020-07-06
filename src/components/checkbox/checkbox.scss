@@ -33,7 +33,7 @@
     font-size: 14px;
     line-height: 18px;
     color: $dark50;
-    max-width: 192px;
+    max-width: 222px;
     width: 100%;
     // добавлены отступы к соседствующим меткам
     display: inline-block;
@@ -66,8 +66,8 @@
       //довален индикатор выбора - галочка
       left: 6px;
       top: 6px;
-      width: 6px;
-      height: 4px;
+      width: 8px;
+      height: 6px;
       border-radius: 1px;
       border-left: 2px solid $purple;
       border-bottom: 2px solid $purple;

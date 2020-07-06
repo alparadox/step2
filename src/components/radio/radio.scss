@@ -75,7 +75,8 @@
       width: 12px;
       height: 12px;
       border-radius: 100%;
-      background-color: $purple;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      ;
     }
 
     &:checked:before {

@@ -9,7 +9,7 @@
 
     &:checked+.toggle__text:after {
       left: 24px;
-      background-color: $purple;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     }
 
     &:not(:checked)+.toggle__text:after {

@@ -28,8 +28,9 @@
   }
 
   &__content {
-    margin-left: 141px;
+    margin-left: 140px;
     margin-top: 52px;
+    margin-right: 180px;
   }
 
   &__colomn-wrapper {
@@ -39,7 +40,9 @@
 
   &__left {}
 
-  &__text-field {}
+  &__text-field {
+    margin-left: 1px;
+  }
 
   &__text-field-title {
     display: flex;
@@ -93,6 +96,7 @@
 
   &__text-field-hover {
     margin-top: 15px;
+    margin-left: 1px;
   }
 
   &__text-field-hover-title {
@@ -112,6 +116,7 @@
 
   &__dropdown-guest-default {
     margin-top: 16px;
+    margin-left: 1px;
   }
 
   &__dropdown-guest-default-title {
@@ -129,6 +134,7 @@
 
   &__masked-text-field {
     margin-top: 16px;
+    margin-left: 1px;
   }
 
   &__masked-text-field-title {
@@ -146,10 +152,12 @@
 
   &__date-dropdown {
     margin-top: 41px;
+    margin-left: 1px;
   }
 
   &__filter-date-dropdown {
     margin-top: 35px;
+    margin-left: 1px;
   }
 
   &__filter-date-dropdown-title {}
@@ -162,7 +170,9 @@
     margin-top: 36px;
   }
 
-  &__subscription-text-field-title {}
+  &__subscription-text-field-title {
+    margin-left: 1px;
+  }
 
   &__subscription-text-field-element {
     margin-top: 1px;
@@ -170,7 +180,6 @@
 
   &__dropdown-room-default {
     margin-top: 96px;
-    margin-left: -1px;
   }
 
   &__dropdown-room-default-title {
@@ -187,9 +196,7 @@
     margin-top: 1px;
   }
 
-  &__dropdown-room-expanded {
-    margin-left: -1px;
-  }
+  &__dropdown-room-expanded {}
 
   &__dropdown-room-expanded-title {
     display: flex;
@@ -204,55 +211,95 @@
 
   &__dropdown-room-expanded-element {}
 
-  &__expandable-checkbox {}
+  &__expandable-checkbox {
+    margin-top: 173px;
+    margin-left: 1px;
+  }
 
-  &__expandable-checkbox-expanded {}
+  &__expandable-checkbox-expanded {
+    margin-top: 49px;
+  }
 
-  &__center {}
+  &__center {
+    margin-left: 11px;
+    margin-top: 8px;
+  }
 
   &__checkbox-buttons {}
 
-  &__radio-buttons {}
+  &__radio-buttons {
+    margin-top: 36px;
+  }
 
   &__radio-buttons-text {}
 
-  &__radio-buttons-element {}
+  &__radio-buttons-element {
+    margin-top: 11px;
+  }
 
-  &__toggle {}
+  &__toggle {
+    margin-top: 32px;
+  }
 
   &__toggle-text {}
 
-  &__toggle-element-on {}
+  &__toggle-element-on {
+    margin-top: 10px;
+  }
 
-  &__toggle-element-off {}
+  &__toggle-element-off {
+    margin-top: 10px;
+  }
 
-  &__like-button {}
+  &__like-button {
+    margin-top: 39px;
+  }
 
   &__like-button-text {}
 
-  &__like-button-element {}
+  &__like-button-element {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 90px;
+  }
 
   &__like-button-2 {}
 
   &__like-button-12 {}
 
-  &__rate-button {}
+  &__rate-button {
+    margin-top: 35px;
+  }
 
   &__rate-button-text {}
 
-  &__rate-button-element {}
+  &__rate-button-element {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    margin-top: 14px;
+  }
 
   &__rate-button-4 {}
 
-  &__rate-button-5 {}
+  &__rate-button-5 {
+    margin-left: 20px;
+  }
 
-  &__dropdown-center {}
+  &__dropdown-center {
+    margin-top: 193px;
+  }
 
   &__dropdown-center-text {}
 
-  &__dropdown-center-element {}
+  &__dropdown-center-element {
+    margin-top: 1px;
+  }
 
-  &__rich-checkbox {}
+  &__rich-checkbox {
+    margin-top: 257px;
+  }
 
   &__right {}
 

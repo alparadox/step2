@@ -46,7 +46,7 @@
       content: "";
       position: absolute;
       left: 0px;
-      top: 0px;
+      top: -2px;
       width: 20px;
       height: 20px;
       background: #FFFFFF;
@@ -65,7 +65,7 @@
       transition: all 0.2s ease;
       //довален индикатор выбора - галочка
       left: 6px;
-      top: 6px;
+      top: 4px;
       width: 8px;
       height: 6px;
       border-radius: 1px;

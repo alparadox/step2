@@ -12,10 +12,14 @@
   }
 
   &__wrapper {
-    margin-top: 1px;
+    margin-top: 8px;
 
     &:nth-child(2) {
-      margin-top: 6px;
+      margin-top: 15px;
+    }
+
+    &:last-child {
+      margin-top: 10px;
     }
   }
 }

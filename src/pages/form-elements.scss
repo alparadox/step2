@@ -362,14 +362,18 @@
   }
 
   &__dropdown-right {
-    margin-top: 40px;
+    margin-top: 228px;
   }
 
   &__dropdown-right-text {}
 
-  &__dropdown-right-element {}
+  &__dropdown-right-element {
+    margin-top: 2px;
+  }
 
-  &__bullet-list {}
+  &__bullet-list {
+    margin-top: 259px;
+  }
 
   &__footer {
     display: flex;

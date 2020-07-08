@@ -1,6 +1,7 @@
 @import '../rich-checkbox/rich-checkbox.scss';
 
 .rich-checkbox-buttons {
+
   &__title {
     font-family: $montserrat;
     font-style: normal;
@@ -12,10 +13,12 @@
   }
 
   &__wrapper {
-    margin-top: 11px;
+    margin-top: 12px;
+    width: 260px;
 
     &:nth-child(2) {
-      margin-top: 14px;
+      margin-top: 15px;
+      width: 230px;
     }
   }
 }

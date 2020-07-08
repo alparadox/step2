@@ -19,7 +19,7 @@ $(document).ready(() => {
       console.log(pagination.pageNumber);
       let numberFrom = 1 + (pagination.pageNumber - 1) * 12;
       let numberTo = pagination.pageNumber * 12;
-      let textFrom = numberFrom + " " + "-" + " ";
+      let textFrom = numberFrom + " " + "–" + " ";
       let textTo = numberTo + " ";
       $(".pagination__number-from").html(textFrom);
       $(".pagination__number-to").html(textTo);

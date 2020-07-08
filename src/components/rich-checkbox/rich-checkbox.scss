@@ -30,6 +30,7 @@
     display: inline-block;
     position: relative;
     padding-left: 30px;
+    padding-top: 2px;
     cursor: pointer;
 
     &:before {
@@ -54,8 +55,8 @@
       transition: all 0.2s ease;
       left: 6px;
       top: 6px;
-      width: 6px;
-      height: 4px;
+      width: 8px;
+      height: 6px;
       border-radius: 1px;
       border-left: 2px solid $purple;
       border-bottom: 2px solid $purple;
@@ -68,9 +69,7 @@
   }
 
   &__info-text {
-    width: 100%;
-    max-width: 230px;
-    top: 4px;
+    top: 3px;
     display: block;
     position: relative;
     padding-left: 30px;

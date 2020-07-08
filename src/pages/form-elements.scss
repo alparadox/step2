@@ -1,25 +1,25 @@
-@import 'common/normalize.scss';
-@import 'common/fonts.scss';
-@import 'common/variables.scss';
-@import 'common/global.scss';
-@import '../components/text-field/text-field.scss';
-@import '../components/radio/radio.scss';
-@import '../components/checkbox-buttons/checkbox-buttons.scss';
-@import '../components/toggle/toggle.scss';
-@import '../components/rich-checkbox-buttons/rich-checkbox-buttons.scss';
-@import '../components/room-info/room-info.scss';
-@import '../components/bullet-list/bullet-list.scss';
-@import '../components/buttons/buttons.scss';
-@import '../components/rate-button/rate-button.scss';
-@import '../components/subscription-text-field/subscription-text-field.scss';
-@import '../components/range-slider/range-slider.scss';
-@import '../components/like-button/like-button.scss';
-@import '../components/review/review.scss';
-@import '../components/pagination/pagination.scss';
-@import '../components/expandable-checkbox-list/expandable-checkbox-list.scss';
-@import '../components/filter-date-dropdown/filter-date-dropdown.scss';
-@import '../components/date-dropdown/date-dropdown.scss';
-@import '../components/dropdown/dropdown.scss';
+@import "common/normalize.scss";
+@import "common/fonts.scss";
+@import "common/variables.scss";
+@import "common/global.scss";
+@import "../components/text-field/text-field.scss";
+@import "../components/radio/radio.scss";
+@import "../components/checkbox-buttons/checkbox-buttons.scss";
+@import "../components/toggle/toggle.scss";
+@import "../components/rich-checkbox-buttons/rich-checkbox-buttons.scss";
+@import "../components/room-info/room-info.scss";
+@import "../components/bullet-list/bullet-list.scss";
+@import "../components/buttons/buttons.scss";
+@import "../components/rate-button/rate-button.scss";
+@import "../components/subscription-text-field/subscription-text-field.scss";
+@import "../components/range-slider/range-slider.scss";
+@import "../components/like-button/like-button.scss";
+@import "../components/review/review.scss";
+@import "../components/pagination/pagination.scss";
+@import "../components/expandable-checkbox-list/expandable-checkbox-list.scss";
+@import "../components/filter-date-dropdown/filter-date-dropdown.scss";
+@import "../components/date-dropdown/date-dropdown.scss";
+@import "../components/dropdown/dropdown.scss";
 
 .form-elements {
   &__logo {
@@ -28,8 +28,9 @@
   }
 
   &__content {
-    margin-left: 141px;
+    margin-left: 140px;
     margin-top: 52px;
+    margin-right: 180px;
   }
 
   &__colomn-wrapper {
@@ -39,7 +40,9 @@
 
   &__left {}
 
-  &__text-field {}
+  &__text-field {
+    margin-left: 1px;
+  }
 
   &__text-field-title {
     display: flex;
@@ -59,7 +62,7 @@
   &__like-button-text,
   &__rate-button-text,
   &__dropdown-center-text,
-  &__buttons-text,
+  &__buttons-title,
   &__pagination-text,
   &__dropdown-right-text {
     font-family: $montserrat;
@@ -73,77 +76,134 @@
     margin-top: 3px;
   }
 
-  &__text-field-description {
+  &__text-field-description,
+  &__text-field-hover-description,
+  &__dropdown-guest-default-description,
+  &__masked-text-field-description,
+  &__dropdown-room-default-description,
+  &__dropdown-room-expanded-description {
     font-family: $montserrat;
     font-weight: normal;
     font-size: 12px;
     text-align: right;
     text-transform: uppercase;
     color: $dark50;
-    ;
   }
 
   &__text-field-element {
     margin-top: 2px;
   }
 
-  &__text-field-hover {}
+  &__text-field-hover {
+    margin-top: 15px;
+    margin-left: 1px;
+  }
 
-  &__text-field-hover-title {}
+  &__text-field-hover-title {
+    display: flex;
+    justify-content: space-between;
+  }
 
-  &__text-field-hover-text {}
+  &__text-field-hover-text {
+    margin-top: 1px;
+  }
 
   &__text-field-hover-description {}
 
-  &__text-field-hover-element {}
+  &__text-field-hover-element {
+    margin-top: 0px;
+  }
 
-  &__dropdown-guest-default {}
+  &__dropdown-guest-default {
+    margin-top: 16px;
+    margin-left: 1px;
+  }
 
-  &__dropdown-guest-default-title {}
+  &__dropdown-guest-default-title {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__dropdown-guest-default-text {}
 
   &__dropdown-guest-default-description {}
 
-  &__dropdown-guest-default-element {}
+  &__dropdown-guest-default-element {
+    margin-top: 1px;
+  }
 
-  &__masked-text-field {}
+  &__masked-text-field {
+    margin-top: 16px;
+    margin-left: 1px;
+  }
 
-  &__masked-text-field-title {}
+  &__masked-text-field-title {
+    display: flex;
+    justify-content: space-between;
+  }
 
-  &__masked-text-field-text {}
+  &__masked-text-field-text {
+    margin-top: 3px;
+  }
 
   &__masked-text-field-description {}
 
   &__masked-text-field-element {}
 
-  &__date-dropdown {}
+  &__date-dropdown {
+    margin-top: 41px;
+    margin-left: 1px;
+  }
 
-  &__filter-date-dropdown {}
+  &__filter-date-dropdown {
+    margin-top: 35px;
+    margin-left: 1px;
+  }
 
   &__filter-date-dropdown-title {}
 
-  &__filter-date-dropdown-element {}
+  &__filter-date-dropdown-element {
+    margin-top: 2px;
+  }
 
-  &__subscription-text-field {}
+  &__subscription-text-field {
+    margin-top: 36px;
+  }
 
-  &__subscription-text-field-title {}
+  &__subscription-text-field-title {
+    margin-left: 1px;
+  }
 
-  &__subscription-text-field-element {}
+  &__subscription-text-field-element {
+    margin-top: 1px;
+  }
 
-  &__dropdown-room-default {}
+  &__dropdown-room-default {
+    margin-top: 96px;
+  }
 
-  &__dropdown-room-default-title {}
+  &__dropdown-room-default-title {
+    width: 266px;
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__dropdown-room-default-text {}
 
   &__dropdown-room-default-description {}
 
-  &__dropdown-room-default-element {}
+  &__dropdown-room-default-element {
+    margin-top: 1px;
+  }
 
   &__dropdown-room-expanded {}
 
-  &__dropdown-room-expanded-title {}
+  &__dropdown-room-expanded-title {
+    display: flex;
+    justify-content: space-between;
+    width: 266px;
+    margin-top: 17px;
+  }
 
   &__dropdown-room-expanded-text {}
 
@@ -151,97 +211,169 @@
 
   &__dropdown-room-expanded-element {}
 
-  &__expandable-checkbox {}
+  &__expandable-checkbox {
+    margin-top: 173px;
+    margin-left: 1px;
+  }
 
-  &__expandable-checkbox-expanded {}
+  &__expandable-checkbox-expanded {
+    margin-top: 49px;
+  }
 
-  &__center {}
+  &__center {
+    margin-left: 11px;
+    margin-top: 8px;
+  }
 
   &__checkbox-buttons {}
 
-  &__radio-buttons {}
+  &__radio-buttons {
+    margin-top: 34px;
+  }
 
   &__radio-buttons-text {}
 
-  &__radio-buttons-element {}
+  &__radio-buttons-element {
+    margin-top: 11px;
+  }
 
-  &__toggle {}
+  &__toggle {
+    margin-top: 33px;
+  }
 
   &__toggle-text {}
 
-  &__toggle-element-on {}
+  &__toggle-element-on {
+    margin-top: 10px;
+  }
 
-  &__toggle-element-off {}
+  &__toggle-element-off {
+    margin-top: 10px;
+  }
 
-  &__like-button {}
+  &__like-button {
+    margin-top: 39px;
+  }
 
   &__like-button-text {}
 
-  &__like-button-element {}
+  &__like-button-element {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 90px;
+  }
 
   &__like-button-2 {}
 
   &__like-button-12 {}
 
-  &__rate-button {}
+  &__rate-button {
+    margin-top: 35px;
+  }
 
   &__rate-button-text {}
 
-  &__rate-button-element {}
+  &__rate-button-element {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    margin-top: 14px;
+  }
 
   &__rate-button-4 {}
 
-  &__rate-button-5 {}
+  &__rate-button-5 {
+    margin-left: 20px;
+  }
 
-  &__dropdown-center {}
+  &__dropdown-center {
+    margin-top: 193px;
+  }
 
   &__dropdown-center-text {}
 
-  &__dropdown-center-element {}
+  &__dropdown-center-element {
+    margin-top: 1px;
+  }
 
-  &__rich-checkbox {}
+  &__rich-checkbox {
+    margin-top: 256px;
+  }
 
   &__right {}
 
-  &__range-slider {}
+  &__range-slider {
+    margin-top: 3px;
+  }
 
-  &__buttons {}
+  &__buttons {
+    margin-top: 15px;
+  }
 
-  &__buttons-text {}
+  &__buttons-title {}
 
-  &__buttons-backgraund {}
+  &__buttons-backgraund {
+    display: flex;
+    justify-content: space-between;
+    width: 218px;
+    margin-top: 12px;
+  }
 
   &__buttons-backgraund-default {}
 
   &__buttons-backgraund-hover {}
 
-  &__buttons-border {}
+  &__buttons-border {
+    display: flex;
+    justify-content: space-between;
+    width: 218px;
+    margin-top: 30px;
+  }
 
   &__buttons-border-default {}
 
   &__buttons-border-hover {}
 
-  &__buttons-text {}
+  &__buttons-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+    width: 148px;
+  }
 
   &__buttons-text-default {}
 
   &__buttons-text-hover {}
 
-  &__buttons-long {}
+  &__buttons-long {
+    margin-top: 27px;
+  }
 
-  &__pagination {}
+  &__pagination {
+    margin-top: 36px;
+    margin-left: 1px;
+  }
 
   &__pagination-text {}
 
-  &__pagination-element {}
+  &__pagination-element {
+    margin-top: 12px;
+  }
 
-  &__dropdown-right {}
+  &__dropdown-right {
+    margin-top: 228px;
+  }
 
   &__dropdown-right-text {}
 
-  &__dropdown-right-element {}
+  &__dropdown-right-element {
+    margin-top: 2px;
+  }
 
-  &__bullet-list {}
+  &__bullet-list {
+    margin-top: 259px;
+  }
 
   &__footer {
     display: flex;

@@ -14,7 +14,7 @@
   padding-top: 1px;
   font-weight: bold;
   color: white;
-  background: $purple;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   transition: .3s;
   cursor: pointer;
 
@@ -85,7 +85,8 @@
     border-radius: 22px;
     border: 0px;
     padding-top: 0px;
-    background: $purple;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    ;
     transition: .3s;
     display: flex;
     justify-content: flex-end;

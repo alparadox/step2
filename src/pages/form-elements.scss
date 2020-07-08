@@ -62,7 +62,7 @@
   &__like-button-text,
   &__rate-button-text,
   &__dropdown-center-text,
-  &__buttons-text,
+  &__buttons-title,
   &__pagination-text,
   &__dropdown-right-text {
     font-family: $montserrat;
@@ -228,7 +228,7 @@
   &__checkbox-buttons {}
 
   &__radio-buttons {
-    margin-top: 36px;
+    margin-top: 34px;
   }
 
   &__radio-buttons-text {}
@@ -238,7 +238,7 @@
   }
 
   &__toggle {
-    margin-top: 32px;
+    margin-top: 33px;
   }
 
   &__toggle-text {}
@@ -298,44 +298,72 @@
   }
 
   &__rich-checkbox {
-    margin-top: 257px;
+    margin-top: 256px;
   }
 
   &__right {}
 
-  &__range-slider {}
+  &__range-slider {
+    margin-top: 3px;
+  }
 
-  &__buttons {}
+  &__buttons {
+    margin-top: 15px;
+  }
 
-  &__buttons-text {}
+  &__buttons-title {}
 
-  &__buttons-backgraund {}
+  &__buttons-backgraund {
+    display: flex;
+    justify-content: space-between;
+    width: 218px;
+    margin-top: 12px;
+  }
 
   &__buttons-backgraund-default {}
 
   &__buttons-backgraund-hover {}
 
-  &__buttons-border {}
+  &__buttons-border {
+    display: flex;
+    justify-content: space-between;
+    width: 218px;
+    margin-top: 30px;
+  }
 
   &__buttons-border-default {}
 
   &__buttons-border-hover {}
 
-  &__buttons-text {}
+  &__buttons-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+    width: 148px;
+  }
 
   &__buttons-text-default {}
 
   &__buttons-text-hover {}
 
-  &__buttons-long {}
+  &__buttons-long {
+    margin-top: 27px;
+  }
 
-  &__pagination {}
+  &__pagination {
+    margin-top: 36px;
+    margin-left: 1px;
+  }
 
   &__pagination-text {}
 
-  &__pagination-element {}
+  &__pagination-element {
+    margin-top: 12px;
+  }
 
-  &__dropdown-right {}
+  &__dropdown-right {
+    margin-top: 40px;
+  }
 
   &__dropdown-right-text {}
 

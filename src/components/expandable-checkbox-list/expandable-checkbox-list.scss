@@ -59,4 +59,20 @@
       display: none;
     }
   }
+
+  &__wrapper {
+    margin-top: 8px;
+
+    &:first-child {
+      margin-top: 16px;
+    }
+
+    &:nth-child(n+3) {
+      margin-top: 7px;
+    }
+
+    &:nth-child(4) {
+      margin-top: 6px;
+    }
+  }
 }

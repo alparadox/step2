@@ -1,0 +1,18 @@
+include ../buttons/buttons.pug
+
+mixin headers(options)
+  nav.headers
+    .headers__logo
+      +logo()
+    ul.headers__menu
+      <li class="logo"><a href="#">О нас</a></li>
+      <li class="item" class="material-icons"><a href="#">Услуги expand_more</a></li>
+      <li class="item"><a href="#">Вакансии</a></li>
+      <li class="item"><a href="#">Новости</a></li>
+      <li class="item" class="material-icons"><a href="#">Соглашения expand_more</a></li>
+      .headers__sign-in
+        +button-painted()
+        +button-transparent({text: "войти"})
+      .headers__register
+        +button-long({text: "зарегестрироваться"})
+    </ul>

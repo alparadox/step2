@@ -2,13 +2,25 @@ mixin button-painted(options)
     button.button-painted click me
 
 mixin button-transparent(options)
-  button.button-transparent= options.text
+  -
+    let buttonSizeClass = "button-transparent"
+      buttonSizeClass += (options.size == "small") ? " button-transparent_small" : ""
+  
+  button(class= buttonSizeClass)= options.text
 
 mixin button-text(options)
   button.button-text click me
 
 mixin button-long(options)
+  -
+    let buttonLongSizeClass = "button-long__button"
+      buttonLongSizeClass += (options.size == "small") ? " button-long__button_small" : ""
+    let buttonTextClass = "button-long__text"
+      buttonTextClass += (options.position == "hight") ? " button-long__text_hight" : ""
+    let buttonIconClass = "button-long__icon"
+      buttonIconClass += (options.icon == "no") ? " button-long__icon_no" : ""
+  
   .button-long
-    button.button-long__button
-      span.button-long__text= options.text
-      span.button-long__icon.material-icons arrow_forward
+    button(class= buttonLongSizeClass)
+      span(class= buttonTextClass)= options.text
+      span(class= buttonIconClass).material-icons arrow_forward

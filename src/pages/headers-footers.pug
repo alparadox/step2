@@ -13,4 +13,9 @@ html
     script(src='jquery-for-parcel.js')
     script(src='headers-footers.js')
   body
-    +headers()
+    .headers-footers
+      .headers-footers__logo
+        +logo()
+      .headers-footers__wrapper
+        .headers-footers__head-no-sign
+          +headers()

@@ -3,12 +3,17 @@
 .headers {
   display: flex;
   justify-content: space-between;
+  height: 70px;
 
-  &__logo {}
+  &__logo {
+    margin-left: 140px;
+    margin-top: 15px;
+  }
 
   &__wrapper-menu {
     display: flex;
     justify-content: space-between;
+    margin-right: 140px;
   }
 
   &__menu {
@@ -25,20 +30,43 @@
   &__about-us {
     font-weight: bold;
     color: $dark75;
+    margin-top: 26px;
   }
 
-  &__item {}
+  &__services {
+    margin-top: 18px;
+  }
 
-  &__services {}
+  &__services-text {
+    margin-top: 26px;
+  }
 
   &__arrow {
     font-family: Material Icons;
     font-size: 24px;
+    top: 8px;
   }
 
-  &__agreement {}
+  &__news {}
 
-  &__sign-in {}
+  &__vacancy {}
 
-  &__register {}
+  &__vacancy,
+  &__news {
+    margin-top: 26px;
+  }
+
+  &__agreement {
+    margin-top: 18px;
+  }
+
+  &__agreement-text {}
+
+  &__sign-in {
+    margin-top: 18px;
+  }
+
+  &__register {
+    margin-top: 18px;
+  }
 }

@@ -49,6 +49,11 @@
     color: $purple;
     border: 2px solid rgba(188, 156, 255, 0.5);
   }
+
+  &_small {
+    width: 87px;
+    height: 34px;
+  }
 }
 
 .button-text {
@@ -76,6 +81,7 @@
 }
 
 .button-long {
+
   &__button {
     text-decoration: none;
     outline: none;
@@ -86,11 +92,15 @@
     border: 0px;
     padding-top: 0px;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    ;
     transition: .3s;
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
+
+    &_small {
+      width: 196px;
+      height: 34px;
+    }
   }
 
   &__text {
@@ -106,6 +116,12 @@
     color: white;
     align-items: center;
     text-align: center;
+
+    &_hight {
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+    }
   }
 
   &__icon {
@@ -120,5 +136,9 @@
     text-align: center;
     vertical-align: middle;
     color: white;
+
+    &_no {
+      display: none;
+    }
   }
 }

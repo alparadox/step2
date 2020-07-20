@@ -1,12 +1,23 @@
 mixin expandable-checkbox-list(options)
+  -
+    let arrowClassName = "expandable-checkbox-list__button material-icons";
+    let bonusClassName = "expandable-checkbox-list__bonus";
+    arrowClassName += (options.isClosed == "true") ? " expandable-checkbox-list__button_expand-rotation" : "";
+    bonusClassName += (options.isClosed == "true") ? " expandable-checkbox-list__bonus_hidden-text" : "";
   .expandable-checkbox-list
     p.expandable-checkbox-list__text 
       span.expandable-checkbox-list__title Expandable checkbox list
-      span.expandable-checkbox-list__button.material-icons expand_more
-    .expandable-checkbox-list__bonus
-      +checkbox({text:'Завтрак', name:'expandable-checkbox'})
-      +checkbox({text:'Письменный стол', name:'expandable-checkbox'})
-      +checkbox({text:'Стул для кормления', name:'expandable-checkbox'})
-      +checkbox({text:'Кроватка', name:'expandable-checkbox'})
-      +checkbox({text:'Телевизор', name:'expandable-checkbox'})
-      +checkbox({text:'Шампунь', name:'expandable-checkbox'})
+      span(class= arrowClassName) expand_more
+    div(class= bonusClassName)
+      .expandable-checkbox-list__wrapper
+        +checkbox({text:'Завтрак', name:'expandable-checkbox'})
+      .expandable-checkbox-list__wrapper
+        +checkbox({text:'Письменный стол', name:'expandable-checkbox'})
+      .expandable-checkbox-list__wrapper
+        +checkbox({text:'Стул для кормления', name:'expandable-checkbox'})
+      .expandable-checkbox-list__wrapper
+        +checkbox({text:'Кроватка', name:'expandable-checkbox'})
+      .expandable-checkbox-list__wrapper
+        +checkbox({text:'Телевизор', name:'expandable-checkbox'})
+      .expandable-checkbox-list__wrapper
+        +checkbox({text:'Шампунь', name:'expandable-checkbox'})

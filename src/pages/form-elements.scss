@@ -30,7 +30,7 @@
   &__content {
     margin-left: 140px;
     margin-top: 52px;
-    margin-right: 180px;
+    margin-right: 0px;
   }
 
   &__colomn-wrapper {
@@ -38,7 +38,8 @@
     justify-content: space-between;
   }
 
-  &__left {}
+  &__left {
+  }
 
   &__text-field {
     margin-left: 1px;
@@ -108,7 +109,8 @@
     margin-top: 1px;
   }
 
-  &__text-field-hover-description {}
+  &__text-field-hover-description {
+  }
 
   &__text-field-hover-element {
     margin-top: 0px;
@@ -124,9 +126,11 @@
     justify-content: space-between;
   }
 
-  &__dropdown-guest-default-text {}
+  &__dropdown-guest-default-text {
+  }
 
-  &__dropdown-guest-default-description {}
+  &__dropdown-guest-default-description {
+  }
 
   &__dropdown-guest-default-element {
     margin-top: 1px;
@@ -146,9 +150,11 @@
     margin-top: 3px;
   }
 
-  &__masked-text-field-description {}
+  &__masked-text-field-description {
+  }
 
-  &__masked-text-field-element {}
+  &__masked-text-field-element {
+  }
 
   &__date-dropdown {
     margin-top: 41px;
@@ -160,7 +166,8 @@
     margin-left: 1px;
   }
 
-  &__filter-date-dropdown-title {}
+  &__filter-date-dropdown-title {
+  }
 
   &__filter-date-dropdown-element {
     margin-top: 2px;
@@ -188,15 +195,18 @@
     justify-content: space-between;
   }
 
-  &__dropdown-room-default-text {}
+  &__dropdown-room-default-text {
+  }
 
-  &__dropdown-room-default-description {}
+  &__dropdown-room-default-description {
+  }
 
   &__dropdown-room-default-element {
     margin-top: 1px;
   }
 
-  &__dropdown-room-expanded {}
+  &__dropdown-room-expanded {
+  }
 
   &__dropdown-room-expanded-title {
     display: flex;
@@ -205,11 +215,14 @@
     margin-top: 17px;
   }
 
-  &__dropdown-room-expanded-text {}
+  &__dropdown-room-expanded-text {
+  }
 
-  &__dropdown-room-expanded-description {}
+  &__dropdown-room-expanded-description {
+  }
 
-  &__dropdown-room-expanded-element {}
+  &__dropdown-room-expanded-element {
+  }
 
   &__expandable-checkbox {
     margin-top: 173px;
@@ -221,17 +234,19 @@
   }
 
   &__center {
-    margin-left: 11px;
+    margin-left: 126px;
     margin-top: 8px;
   }
 
-  &__checkbox-buttons {}
+  &__checkbox-buttons {
+  }
 
   &__radio-buttons {
     margin-top: 34px;
   }
 
-  &__radio-buttons-text {}
+  &__radio-buttons-text {
+  }
 
   &__radio-buttons-element {
     margin-top: 11px;
@@ -241,7 +256,8 @@
     margin-top: 33px;
   }
 
-  &__toggle-text {}
+  &__toggle-text {
+  }
 
   &__toggle-element-on {
     margin-top: 10px;
@@ -255,7 +271,8 @@
     margin-top: 39px;
   }
 
-  &__like-button-text {}
+  &__like-button-text {
+  }
 
   &__like-button-element {
     display: flex;
@@ -264,15 +281,18 @@
     width: 90px;
   }
 
-  &__like-button-2 {}
+  &__like-button-2 {
+  }
 
-  &__like-button-12 {}
+  &__like-button-12 {
+  }
 
   &__rate-button {
     margin-top: 35px;
   }
 
-  &__rate-button-text {}
+  &__rate-button-text {
+  }
 
   &__rate-button-element {
     display: flex;
@@ -281,7 +301,8 @@
     margin-top: 14px;
   }
 
-  &__rate-button-4 {}
+  &__rate-button-4 {
+  }
 
   &__rate-button-5 {
     margin-left: 20px;
@@ -291,7 +312,8 @@
     margin-top: 193px;
   }
 
-  &__dropdown-center-text {}
+  &__dropdown-center-text {
+  }
 
   &__dropdown-center-element {
     margin-top: 1px;
@@ -301,7 +323,9 @@
     margin-top: 256px;
   }
 
-  &__right {}
+  &__right {
+    margin-left: 72px;
+  }
 
   &__range-slider {
     margin-top: 3px;
@@ -311,7 +335,8 @@
     margin-top: 15px;
   }
 
-  &__buttons-title {}
+  &__buttons-title {
+  }
 
   &__buttons-backgraund {
     display: flex;
@@ -320,9 +345,11 @@
     margin-top: 12px;
   }
 
-  &__buttons-backgraund-default {}
+  &__buttons-backgraund-default {
+  }
 
-  &__buttons-backgraund-hover {}
+  &__buttons-backgraund-hover {
+  }
 
   &__buttons-border {
     display: flex;
@@ -331,9 +358,11 @@
     margin-top: 30px;
   }
 
-  &__buttons-border-default {}
+  &__buttons-border-default {
+  }
 
-  &__buttons-border-hover {}
+  &__buttons-border-hover {
+  }
 
   &__buttons-text {
     display: flex;
@@ -342,9 +371,11 @@
     width: 148px;
   }
 
-  &__buttons-text-default {}
+  &__buttons-text-default {
+  }
 
-  &__buttons-text-hover {}
+  &__buttons-text-hover {
+  }
 
   &__buttons-long {
     margin-top: 27px;
@@ -355,7 +386,8 @@
     margin-left: 1px;
   }
 
-  &__pagination-text {}
+  &__pagination-text {
+  }
 
   &__pagination-element {
     margin-top: 12px;
@@ -365,22 +397,31 @@
     margin-top: 228px;
   }
 
-  &__dropdown-right-text {}
+  &__dropdown-right-text {
+  }
 
   &__dropdown-right-element {
     margin-top: 2px;
   }
 
   &__bullet-list {
-    margin-top: 259px;
+    margin-top: 257px;
   }
 
   &__footer {
     display: flex;
     justify-content: space-between;
+    margin-top: 98px;
+    margin-left: 140px;
+    margin-bottom: 131px;
+    margin-right: 0px;
   }
 
-  &__room-info {}
+  &__room-info {
+  }
 
-  &__review {}
+  &__review {
+    margin-top: 10px;
+    margin-left: 167px;
+  }
 }

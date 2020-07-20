@@ -1,0 +1,22 @@
+@import "common/normalize.scss";
+@import "common/fonts.scss";
+@import "common/variables.scss";
+@import "common/global.scss";
+@import "../components/headers/headers.scss";
+
+body {
+  background: #E5E5E5;
+}
+
+.headers-footers {
+  &__logo {
+    margin-bottom: 55px;
+  }
+
+  &__head-no-sign {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  }
+
+  &__wrapper {}
+}

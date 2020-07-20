@@ -9,7 +9,9 @@ body {
 }
 
 .headers-footers {
-  &__logo {}
+  &__logo {
+    margin-bottom: 55px;
+  }
 
   &__head-no-sign {
     background: #FFFFFF;

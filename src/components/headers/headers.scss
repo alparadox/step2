@@ -6,14 +6,15 @@
   height: 70px;
 
   &__logo {
-    margin-left: 140px;
+    margin-left: 110px;
     margin-top: 15px;
   }
 
   &__wrapper-menu {
     display: flex;
     justify-content: space-between;
-    margin-right: 140px;
+    margin-right: 79px;
+
   }
 
   &__menu {
@@ -27,24 +28,33 @@
     justify-content: space-between;
   }
 
+  &__link {
+    align-self: center;
+  }
+
   &__about-us {
+    display: flex;
     font-weight: bold;
     color: $dark75;
-    margin-top: 26px;
+    //margin-top: 24px;
+    margin-right: 20px;
   }
 
   &__services {
-    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    //margin-top: 18px;
   }
 
   &__services-text {
-    margin-top: 26px;
+    //margin-top: 24px;
   }
 
   &__arrow {
     font-family: Material Icons;
     font-size: 24px;
-    top: 8px;
+    margin-right: 20px;
+    margin-left: 0px;
   }
 
   &__news {}
@@ -53,20 +63,22 @@
 
   &__vacancy,
   &__news {
-    margin-top: 26px;
+    //margin-top: 24px;
+    margin-right: 20px;
   }
 
   &__agreement {
-    margin-top: 18px;
+    //margin-top: 18px;
   }
 
   &__agreement-text {}
 
   &__sign-in {
-    margin-top: 18px;
+    //margin-top: 18px;
+    margin-right: 20px;
   }
 
   &__register {
-    margin-top: 18px;
+    //margin-top: 18px;
   }
 }

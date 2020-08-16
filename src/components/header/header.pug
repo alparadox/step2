@@ -1,0 +1,25 @@
+include ../buttons/buttons.pug
+include ../logo.pug
+
+mixin header(options)
+  nav.header
+    .header__logo
+      +logo-toxin()
+    ul.header__menu
+      li.header__item
+        a.header__link(href='./mock.html') О нас
+      li.header__item
+        a.header__link(href='./mock.html') Услуги
+        span.header__arrow.material-icons expand_more
+      li.header__item
+        a.header__link(href='./mock.html') Вакансии
+      li.header__item
+        a.header__link(href='./mock.html') Новости
+      li.header__item
+        a.header__link(href='./mock.html') Соглашения
+        span.header__arrow.material-icons expand_more
+    .header__button-login
+      +button-transparent({text: "войти", size: "small"})
+    .header__button-register
+      +button-long({text: "зарегистрироваться", size: 'small', position: "hight", icon: "no"})
+    .header__button-toggle.material-icons dehaze

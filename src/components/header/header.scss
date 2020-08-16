@@ -14,6 +14,7 @@
     list-style-type: none;
     order: 3;
     width: 100%;
+    display: none;
   }
 
   &__item {
@@ -49,14 +50,20 @@
     width: 100%;
     text-align: center;
     margin-top: 15px;
+    display: none;
   }
 
   &__button-register {
     order: 2;
     margin: 15px auto;
+    display: none;
   }
 
   &__button-toggle {
     order: 1;
+  }
+
+  &__active {
+    display: block;
   }
 }

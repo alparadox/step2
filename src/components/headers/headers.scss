@@ -4,6 +4,8 @@
   display: flex;
   justify-content: space-between;
   height: 70px;
+  flex-wrap: wrap;
+  align-items: center;
 
   &__logo {
     margin-left: 110px;
@@ -14,6 +16,8 @@
     display: flex;
     justify-content: space-between;
     margin-right: 80px;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   &__menu {
@@ -25,6 +29,9 @@
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    
   }
 
   &__link {
@@ -35,12 +42,20 @@
     display: flex;
     font-weight: bold;
     color: $dark75;
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
   }
 
   &__services {
     display: flex;
     align-items: center;
     margin-left: 20px;
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
   }
 
   &__services-text {
@@ -63,12 +78,20 @@
   &__vacancy,
   &__news {
     display: flex;
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
   }
 
   &__agreement {
     align-items: center;
     display: flex;
     margin-left: 20px;
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
   }
 
   &__agreement-text {
@@ -77,10 +100,20 @@
   &__sign-in {
     align-self: center;
     margin-left: 20px;
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
   }
 
   &__register {
     align-self: center;
     margin-left: 19px;
+  }
+  &__headers_item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
   }
 }

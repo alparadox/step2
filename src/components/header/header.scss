@@ -5,12 +5,19 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  height: 70px;
 
-  @media (min-width: 700px) {
+  @media (min-width: 560px) {
     justify-content: center;
   }
 
-  &__logo {}
+  &__logo {
+    margin-top: 9px;
+
+    @media (min-width: 560px) {
+      flex: 1;
+    }
+  }
 
   &__menu {
     padding: 0;
@@ -55,16 +62,36 @@
     text-align: center;
     margin-top: 15px;
     display: none;
+
+    @media (min-width: 560px) {
+      order: 1;
+      display: block;
+      width: auto;
+      margin-top: 0;
+      margin-right: 20px;
+    }
   }
 
   &__button-register {
     order: 2;
     margin: 15px auto;
     display: none;
+
+    @media (min-width: 560px) {
+      order: 1;
+      display: block;
+      width: auto;
+    }
   }
 
   &__button-toggle {
     order: 1;
+
+    @media (min-width: 560px) {
+      flex: 1;
+      text-align: right;
+      order: 2;
+    }
   }
 
   &__active {

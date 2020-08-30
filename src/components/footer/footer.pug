@@ -1,0 +1,41 @@
+include ../subscription-text-field/subscription-text-field.pug
+include ../logo.pug
+
+mixin footer(options)
+  .footer
+    .footer__container-menu
+      .footer__logo-description
+        .footer__logo
+          +logo-toxin()
+        .footer__description
+          p.footer__text-hotel Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+      .footer__menu
+        .footer__navigation
+          p.footer__menu-title Навигация
+          a.footer__link(href='./mock.html') О нас
+          a.footer__link(href='./mock.html') Новости
+          a.footer__link(href='./mock.html') Служба поддержки
+          a.footer__link(href='./mock.html') Услуги
+        .footer__about-us
+          p.footer__menu-title О нас 
+          a.footer__link(href='./mock.html') О сервисе
+          a.footer__link(href='./mock.html') Наша команда
+          a.footer__link(href='./mock.html') Вакансии
+          a.footer__link(href='./mock.html') Инвесторы
+        .footer__support
+          p.footer__menu-title Служба поддержки
+          a.footer__link(href='./mock.html') Соглашения
+          a.footer__link(href='./mock.html') Сообщества
+          a.footer__link(href='./mock.html') Связь с нами
+      .footer__subscribe
+        p.footer__menu-title Подписка
+        p.footer__subscribe-text Получайте специальные предложения и новости сервиса
+        .footer__subscribe-input
+          +subscription-text-field()
+    .footer__container-news
+      .footer__low
+        p.footer__protection-text Copyright © 2018 Toxin отель. Все права зачищены.
+      .footer__social-networks
+        .footer__twitter
+        .footer__facebook
+        .footer__instagram

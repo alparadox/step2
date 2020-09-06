@@ -1,1 +1,103 @@
 @import "../subscription-text-field/subscription-text-field.scss";
+
+.footer {
+
+  &__container-menu {
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+    padding-left: 140px;
+    padding-top: 100px;
+    padding-right: 140px;
+  }
+
+  &__logo-description {
+    width: 260px;
+  }
+
+  &__logo {}
+
+  &__description {}
+
+  &__text-hotel {}
+
+  &__menu {
+    display: flex;
+  }
+
+  &__navigation {
+    width: 143px;
+  }
+
+  &__menu-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $dark100;
+  }
+
+  &__link {
+    display: flex;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark50;
+    width: 100%;
+  }
+
+  &__about-us {
+    width: 108px;
+  }
+
+  &__support {
+    width: 149px;
+  }
+
+  &__subscribe {
+    width: 260px;
+  }
+
+  &__subscribe-text {}
+
+  &__subscribe-input {}
+
+  &__container-news {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    margin-top: 1px;
+  }
+
+  &__low {}
+
+  &__protection-text {}
+
+  &__social-networks {}
+
+  &__twitter {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 23px;
+    color: $purple;
+  }
+
+  &__facebook {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 23px;
+    color: $purple;
+  }
+
+  &__instagram {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 23px;
+    color: $purple;
+  }
+}

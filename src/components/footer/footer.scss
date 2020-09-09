@@ -1,14 +1,13 @@
 @import "../subscription-text-field/subscription-text-field.scss";
 
 .footer {
+  margin-bottom: 40px;
 
   &__container-menu {
     display: flex;
     background: #FFFFFF;
     box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
-    padding-left: 140px;
-    padding-top: 100px;
-    padding-right: 140px;
+    padding: 100px 140px 100px 140px;
   }
 
   &__logo-description {
@@ -17,16 +16,24 @@
 
   &__logo {}
 
-  &__description {}
+  &__description {
+    margin-top: 10px;
+  }
 
-  &__text-hotel {}
+  &__text-hotel {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 24px;
+  }
 
   &__menu {
     display: flex;
+    margin-top: 4px;
   }
 
   &__navigation {
     width: 143px;
+    padding-left: 40px;
   }
 
   &__menu-title {
@@ -36,6 +43,7 @@
     line-height: 15px;
     text-transform: uppercase;
     color: $dark100;
+    margin-bottom: 1px;
   }
 
   &__link {
@@ -48,21 +56,31 @@
     line-height: 17px;
     color: $dark50;
     width: 100%;
+    margin-top: 22px;
   }
 
   &__about-us {
     width: 108px;
+    margin-left: 57px;
   }
 
   &__support {
     width: 149px;
+    margin-left: 92px;
   }
 
   &__subscribe {
     width: 260px;
+    margin-left: 51px;
+    margin-top: 4px;
   }
 
-  &__subscribe-text {}
+  &__subscribe-text {
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 24px;
+  }
 
   &__subscribe-input {}
 
@@ -72,13 +90,19 @@
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     margin-top: 1px;
+    padding: 23px 140px 23px 140px;
+    //align-items: center;
   }
 
   &__low {}
 
   &__protection-text {}
 
-  &__social-networks {}
+  &__social-networks {
+    width: 112px;
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__twitter {
     text-decoration: none;

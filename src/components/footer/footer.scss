@@ -8,7 +8,7 @@
     background: #FFFFFF;
     box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
     padding: 100px 140px 100px 140px;
-
+    
     @media (max-width: 768px) {
       display: none;
     }
@@ -33,11 +33,19 @@
   &__menu {
     display: flex;
     margin-top: 4px;
+
+    @media (max-width: 1255px) {
+      flex-direction: column;
+    }
   }
 
   &__navigation {
     width: 143px;
     padding-left: 40px;
+
+    @media (max-width: 1255px) {
+      padding-left: 10px;
+    }
   }
 
   &__menu-title {
@@ -61,16 +69,28 @@
     color: $dark50;
     width: 100%;
     margin-top: 22px;
+
+    @media (max-width: 1255px) {
+      display: none;
+    }
   }
 
   &__about-us {
     width: 108px;
     margin-left: 57px;
+
+    @media (max-width: 1255px) {
+      margin-left: 10px;
+    }
   }
 
   &__support {
     width: 149px;
     margin-left: 92px;
+
+    @media (max-width: 1255px) {
+      margin-left: 10px;
+    }
   }
 
   &__subscribe {
@@ -102,9 +122,9 @@
     @media (max-width: 768px) {
       display: block;
       width: 100%;
-      max-width: 560px;
+      max-width: 768px;
       margin: 0 auto;
-      padding: 120px 104px 120px 104px;
+      padding: 120px 0px 120px 0px;
       align-items: center;
       text-align: center;
     }

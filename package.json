@@ -9,7 +9,8 @@
     "land": "parcel src/pages/landing-page.pug",
     "ui": "parcel src/pages/form-elements.pug",
     "cards": "parcel src/pages/cards.pug",
-    "reg": "parcel src/pages/registration.pug"
+    "reg": "parcel src/pages/registration.pug",
+    "sign": "parcel src/pages/sign-in.pug"
   },
   "repository": {
     "type": "git",

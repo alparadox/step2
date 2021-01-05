@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel q.pug"
+    "dev": "parcel src/pages/headers-footers.pug",
+    "land": "parcel src/pages/landing-page.pug",
+    "cards": "parcel src/pages/cards.pug"
   },
   "repository": {
     "type": "git",

@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/pages/headers-footers.pug",
     "land": "parcel src/pages/landing-page.pug",
+    "ui": "parcel src/pages/form-elements.pug",
     "cards": "parcel src/pages/cards.pug"
   },
   "repository": {

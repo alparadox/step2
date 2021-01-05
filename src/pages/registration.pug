@@ -1,0 +1,25 @@
+include ../components/registration-card/registration-card.pug
+include ../components/footer/footer.pug
+include ../components/header/header.pug
+include ../components/logo.pug
+
+doctype
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='initial-scale=1.0, width=device-width')
+    meta(name='keywords' content='cards')
+    meta(name='description' content='registration')
+    title Registration
+    link(rel='stylesheet' href='registration.scss' type='text/css')
+    script(src='jquery-for-parcel.js')
+    script(src='registration.js')
+  body
+    .registration
+      .registration__header
+        +header({isLoggedIn:false})
+      .registration__main
+        .registration__form
+          +registration-card()
+      .registration__footer
+        +footer()

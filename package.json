@@ -8,7 +8,8 @@
     "dev": "parcel src/pages/headers-footers.pug",
     "land": "parcel src/pages/landing-page.pug",
     "ui": "parcel src/pages/form-elements.pug",
-    "cards": "parcel src/pages/cards.pug"
+    "cards": "parcel src/pages/cards.pug",
+    "reg": "parcel src/pages/registration.pug"
   },
   "repository": {
     "type": "git",

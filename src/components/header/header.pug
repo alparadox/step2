@@ -18,8 +18,20 @@ mixin header(options)
       li.header__item
         a.header__link(href='./mock.html') Соглашения
         span.header__arrow.material-icons expand_more
-    .header__button-login
-      +button-transparent({text: "войти", size: "small"})
-    .header__button-register
-      +button-long({text: "зарегистрироваться", size: 'small', position: "hight", icon: "no"})
+
+
+
+    if options.isLoggedIn == true
+      .header__liner
+      p.header__user Юлий Цезарь
+    else
+      .header__button-login
+        +button-transparent({text: "войти", size: "small"})
+      .header__button-register
+        +button-long({text: "зарегистрироваться", size: 'small', position: "hight", icon: "no"})
+
+
+    
+    
+    
     .header__button-toggle.material-icons dehaze

@@ -1,5 +1,6 @@
 include ../components/logo.pug
 include ../components/header/header.pug
+include ../components/footer/footer.pug
 
 doctype
 html
@@ -18,4 +19,9 @@ html
         +logo()
       .headers-footers__wrapper
         .headers-footers__head-no-sign
-          +header()
+          +header({isLoggedIn: false})
+        //.headers-footers__head-yes-sign
+          //+header({isLoggedIn: true})
+      .headers-footers__wrapper-down
+        .headers-footers__footer
+          +footer()

@@ -6,6 +6,8 @@
   justify-content: space-between;
   align-items: center;
   height: 70px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 
   @media (min-width: 560px) {
     justify-content: center;
@@ -25,7 +27,7 @@
     }
 
     @media (min-width: 1072px) {
-      margin-left: 110px;
+      margin-left: 139px;
     }
   }
 
@@ -112,7 +114,7 @@
     }
 
     @media (min-width: 1072px) {
-      margin-right: 79px;
+      margin-right: 141px;
     }
   }
 
@@ -127,6 +129,41 @@
 
     @media (min-width: 1072px) {
       display: none;
+    }
+  }
+
+  &__liner {
+
+    @media (min-width: 1072px) {
+      width: 1px;
+      height: 30px;
+      background: rgba(31, 32, 65, 0.1);
+    }
+  }
+
+  &__user {
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 14px;
+    color: $dark50;
+    order: 2;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    display: none;
+
+    @media (min-width: 560px) {
+      order: 1;
+      display: block;
+      width: auto;
+      margin-top: 0;
+      margin-left: 50px;
+    }
+
+    @media (min-width: 1072px) {
+      margin-left: 6px;
+      min-width: 130px;
+      margin-right: 155px;
     }
   }
 

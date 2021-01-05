@@ -4,20 +4,37 @@
 @import "common/global.scss";
 
 @import "../components/header/header.scss";
+@import "../components/footer/footer.scss";
 
 body {
   background: #E5E5E5;
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
 }
 
 .headers-footers {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+
   &__logo {
     margin-bottom: 55px;
+    padding-top: 29px;
+    padding-left: 29px;
   }
 
-  &__head-no-sign {
-    background: #FFFFFF;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  &__head-no-sign {}
+
+  &__head-yes-sign {
+    margin-top: 40px;
   }
 
   &__wrapper {}
+
+  &__wrapper-down {
+    margin-top: 150px;
+  }
+
+  &__footer {}
 }

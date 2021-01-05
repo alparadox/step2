@@ -1,11 +1,11 @@
 .subscription-text-field {
   width: 100%;
-  max-width: 267px;
+  max-width: 260px;
   height: 44px;
-
+  position: relative;
 
   &__email {
-    width: 267px;
+    width: 260px;
     height: 44px;
     background: #FFFFFF;
     border: 1px solid $dark25;
@@ -17,7 +17,6 @@
     font-size: 14px;
     line-height: 24px;
     color: $dark25;
-    position: relative;
     padding-left: 14px;
 
     &:hover,
@@ -45,6 +44,6 @@
     border: none;
     background-color: rgba(225, 225, 225, 0);
     position: absolute;
-    left: 367px;
+    right: 3px;
   }
 }

@@ -1,0 +1,26 @@
+include ../components/search-card/search-card.pug
+include ../components/footer/footer.pug
+include ../components/header/header.pug
+include ../components/logo.pug
+
+doctype
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='initial-scale=1.0, width=device-width')
+    meta(name='keywords' content='cards')
+    meta(name='description' content='Landing page')
+    title Landing page
+    link(rel='stylesheet' href='landing-page.scss' type='text/css')
+    script(src='jquery-for-parcel.js')
+    script(src='landing-page.js')
+  body
+    .landing
+      .landing__header
+        +header({isLoggedIn:false})
+      .landing__main
+        .landing__form
+          +search-card()
+        .landing__text Лучшие номера для вашей работы, отдыха и просто вдохновения
+      .landing__footer
+        +footer()

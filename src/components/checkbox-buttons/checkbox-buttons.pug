@@ -2,7 +2,7 @@ include ../checkbox/checkbox.pug
 
 mixin checkbox-buttons(options)
   .checkbox-buttons
-    .checkbox-buttons__title Checkbox buttons
+    .checkbox-buttons__title= options.title
     .checkbox-buttons__wrapper
       +checkbox ({text:'Можно курить', name:'checkbox'})
     .checkbox-buttons__wrapper

@@ -1,0 +1,56 @@
+include ../components/footer/footer.pug
+include ../components/header/header.pug
+include ../components/logo.pug
+include ../components/text-field/text-field.pug
+include ../components/radio/radio.pug
+include ../components/checkbox-buttons/checkbox-buttons.pug
+include ../components/toggle/toggle.pug
+include ../components/rich-checkbox-buttons/rich-checkbox-buttons.pug
+include ../components/room-info/room-info.pug
+include ../components/bullet-list/bullet-list.pug
+include ../components/buttons/buttons.pug
+include ../components/rate-button/rate-button.pug
+include ../components/subscription-text-field/subscription-text-field.pug
+include ../components/range-slider/range-slider.pug
+include ../components/like-button/like-button.pug
+include ../components/review/review.pug
+include ../components/pagination/pagination.pug
+include ../components/expandable-checkbox-list/expandable-checkbox-list.pug
+include ../components/filter-date-dropdown/filter-date-dropdown.pug
+include ../components/date-dropdown/date-dropdown.pug
+include ../components/dropdown/dropdown.pug
+include ../components/logo.pug
+
+doctype
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='initial-scale=1.0, width=device-width')
+    meta(name='keywords' content='cards')
+    meta(name='description' content='Search room')
+    title Search room
+    link(rel='stylesheet' href='search-room.scss' type='text/css')
+    script(src='jquery-for-parcel.js')
+    script(src='search-room.js')
+  body.search-room
+    .search-room__header
+      +header({isLoggedIn:false})
+    .search-room__main
+      aside.search-room__settings
+
+        .search-room__filter-date-dropdown
+          p.form-elements__filter-date-dropdown-text даты пребывания в отеле
+          .form-elements__filter-date-dropdown-element
+            +filter-date-dropdown()
+        .search-room__guests
+          p.form-elements__guests-text гости
+          .form-elements__guests-element
+            +dropdown({size: 'small'})
+      
+      .search-room__card
+        .search-room__text
+        .search-room__cards
+        .search-room__pagination
+          +pagination()
+    .search-room__footer
+      +footer()

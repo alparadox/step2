@@ -10,6 +10,7 @@
     "ui": "parcel src/pages/form-elements.pug",
     "cards": "parcel src/pages/cards.pug",
     "reg": "parcel src/pages/registration.pug",
+    "room": "parcel src/pages/search-room.pug",
     "sign": "parcel src/pages/sign-in.pug"
   },
   "repository": {

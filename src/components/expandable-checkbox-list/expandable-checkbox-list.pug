@@ -6,7 +6,7 @@ mixin expandable-checkbox-list(options)
     bonusClassName += (options.isClosed == "true") ? " expandable-checkbox-list__bonus_hidden-text" : "";
   .expandable-checkbox-list
     p.expandable-checkbox-list__text 
-      span.expandable-checkbox-list__title Expandable checkbox list
+      span.expandable-checkbox-list__title= options.title
       span(class= arrowClassName) expand_more
     div(class= bonusClassName)
       .expandable-checkbox-list__wrapper

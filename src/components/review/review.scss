@@ -8,7 +8,7 @@
   }
 
   &__image {
-    background-image: url(../images/form-elements/muratsafanof.png);
+    //background-image: url(../images/form-elements/muratsafanof.png);
     width: 47.67px;
     height: 48px;
     background-position: -20px -10px;
@@ -41,7 +41,7 @@
   &__wrapper-down {
     display: flex;
     justify-content: flex-start;
-    width: 711px;
+    max-width: 711px;
   }
 
   &__like {
@@ -52,7 +52,6 @@
   &__text {
     width: 100%;
     max-width: 653px;
-    height: 72px;
     font-family: $montserrat;
     font-style: normal;
     font-weight: normal;

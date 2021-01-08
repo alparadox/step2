@@ -1,11 +1,11 @@
 mixin review(options)
   .review
     .review__wrapper-up
-      .review__image
+      .review__image(style= options.image)
       .review__name-date
         p.review__name= options.name
         p.review__date= options.date
     .review__wrapper-down
       .review__like
-        +like-button ({number: '12'})
+        +like-button ({number: options.like})
       p.review__text= options.text

@@ -11,6 +11,7 @@
     "cards": "parcel src/pages/cards.pug",
     "reg": "parcel src/pages/registration.pug",
     "room": "parcel src/pages/search-room.pug",
+    "detail": "parcel src/pages/room-details.pug",
     "sign": "parcel src/pages/sign-in.pug"
   },
   "repository": {

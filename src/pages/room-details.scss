@@ -78,6 +78,7 @@
     justify-content: space-between;
     padding-left: 139px;
     padding-right: 140px;
+    flex-wrap: wrap;
   }
 
   &__intelligence {
@@ -87,6 +88,8 @@
   &__rating {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-right: 109px;
   }
 
@@ -168,6 +171,7 @@
   &__review-title {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__review-text {
@@ -188,6 +192,7 @@
   &__data {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-right: 78px;
     padding-top: 9px;
   }

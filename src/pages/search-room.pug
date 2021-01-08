@@ -1,0 +1,102 @@
+include ../components/footer/footer.pug
+include ../components/header/header.pug
+include ../components/logo.pug
+include ../components/text-field/text-field.pug
+include ../components/radio/radio.pug
+include ../components/checkbox-buttons/checkbox-buttons.pug
+include ../components/toggle/toggle.pug
+include ../components/rich-checkbox-buttons/rich-checkbox-buttons.pug
+include ../components/room-info/room-info.pug
+include ../components/bullet-list/bullet-list.pug
+include ../components/buttons/buttons.pug
+include ../components/rate-button/rate-button.pug
+include ../components/subscription-text-field/subscription-text-field.pug
+include ../components/range-slider/range-slider.pug
+include ../components/like-button/like-button.pug
+include ../components/review/review.pug
+include ../components/pagination/pagination.pug
+include ../components/expandable-checkbox-list/expandable-checkbox-list.pug
+include ../components/filter-date-dropdown/filter-date-dropdown.pug
+include ../components/date-dropdown/date-dropdown.pug
+include ../components/dropdown/dropdown.pug
+include ../components/logo.pug
+include ../components/room-card/room-card.pug
+
+doctype
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='initial-scale=1.0, width=device-width')
+    meta(name='keywords' content='cards')
+    meta(name='description' content='Search room')
+    title Search room
+    link(rel='stylesheet' href='search-room.scss' type='text/css')
+    script(src='jquery-for-parcel.js')
+    script(src='search-room.js')
+  body.search-room
+    .search-room__header
+      +header({isLoggedIn:false})
+    .search-room__main
+      aside.search-room__settings
+
+        .search-room__filter-date-dropdown
+          p.search-room__filter-date-dropdown-text даты пребывания в отеле
+          .search-room__filter-date-dropdown-element
+            +filter-date-dropdown()
+
+        .search-room__guests
+          p.search-room__guests-text гости
+          .search-room__guests-element
+            +dropdown({size: 'small'})
+
+        .search-room__slider
+          +range-slider({text:'диапазон цены'})
+          .search-room__slider-text Стоимость за сутки пребывания в номере
+
+        .search-room__checkbox-buttons
+            +checkbox-buttons({title:'Правила дома'})
+
+        .search-room__rich-checkbox-buttons
+            +rich-checkbox-buttons({title:'Доступность'})
+        
+        .search-room__dropdown
+          p.search-room__dropdown-text удобства номера
+          .search-room__dropdown-element
+            +dropdown({size: 'small'})
+        
+        .search-room__expandable-checkbox
+              +expandable-checkbox-list({isClosed:'true', title:'дополнительные удобства'})
+
+      .search-room__article
+        .search-room__text Номера, которые мы для вас подобрали
+        
+        .search-room__cards
+          .search-room__card
+            +room-card({number:"888", type:"люкс", price:"9 990₽", rewiew:"145", countStars:"5", image:"background-image: url(../images/cards/888.png);"})
+          .search-room__card
+            +room-card({number:"840", type:" ", price:"9 900₽", rewiew:"65", countStars:"4", image:"background-image: url(../images/cards/840.png);"})
+          .search-room__card
+            +room-card({number:"980", type:"люкс", price:"8 500₽", rewiew:"35", countStars:"3", image:"background-image: url(../images/cards/980.png);"})
+          .search-room__card
+            +room-card({number:"856", type:" ", price:"7 300₽", rewiew:"19", countStars:"5", image:"background-image: url(../images/cards/856.png);"})
+          .search-room__card
+            +room-card({number:"740", type:" ", price:"6 000₽", rewiew:"44", countStars:"4", image:"background-image: url(../images/cards/740.png);"})
+          .search-room__card
+            +room-card({number:"982", type:" ", price:"5 800₽", rewiew:"56", countStars:"3", image:"background-image: url(../images/cards/982.png);"})
+          .search-room__card
+            +room-card({number:"678", type:" ", price:"5 500₽", rewiew:"45", countStars:"5", image:"background-image: url(../images/cards/678.png);"})
+          .search-room__card
+            +room-card({number:"450", type:" ", price:"5 300₽", rewiew:"39", countStars:"4", image:"background-image: url(../images/cards/450.png);"})
+          .search-room__card
+            +room-card({number:"350", type:" ", price:"5 000₽", rewiew:"77", countStars:"3", image:"background-image: url(../images/cards/350.png);"})
+          .search-room__card
+            +room-card({number:"666", type:" ", price:"5 000₽", rewiew:"25", countStars:"5", image:"background-image: url(../images/cards/666.png);"})
+          .search-room__card
+            +room-card({number:"444", type:" ", price:"5 000₽", rewiew:"15", countStars:"3", image:"background-image: url(../images/cards/444.png);"})
+          .search-room__card
+            +room-card({number:"352", type:" ", price:"5 000₽", rewiew:"55", countStars:"3", image:"background-image: url(../images/cards/352.png);"})
+
+        .search-room__pagination
+          +pagination()
+    .search-room__footer
+      +footer()

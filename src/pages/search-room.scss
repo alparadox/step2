@@ -1,0 +1,147 @@
+@import "common/normalize.scss";
+@import "common/fonts.scss";
+@import "common/variables.scss";
+@import "common/global.scss";
+@import "../components/calendar-card/calendar-card.scss";
+@import "../components/footer/footer.scss";
+@import "../components/header/header.scss";
+@import "../components/text-field/text-field.scss";
+@import "../components/radio/radio.scss";
+@import "../components/checkbox-buttons/checkbox-buttons.scss";
+@import "../components/toggle/toggle.scss";
+@import "../components/rich-checkbox-buttons/rich-checkbox-buttons.scss";
+@import "../components/room-info/room-info.scss";
+@import "../components/bullet-list/bullet-list.scss";
+@import "../components/buttons/buttons.scss";
+@import "../components/rate-button/rate-button.scss";
+@import "../components/subscription-text-field/subscription-text-field.scss";
+@import "../components/range-slider/range-slider.scss";
+@import "../components/like-button/like-button.scss";
+@import "../components/review/review.scss";
+@import "../components/pagination/pagination.scss";
+@import "../components/expandable-checkbox-list/expandable-checkbox-list.scss";
+@import "../components/filter-date-dropdown/filter-date-dropdown.scss";
+@import "../components/date-dropdown/date-dropdown.scss";
+@import "../components/dropdown/dropdown.scss";
+@import "../components/room-card/room-card.scss";
+
+.search-room {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &__header {
+    flex: 0 0 auto;
+  }
+
+  &__main {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
+  &__settings {
+    max-width: 326px;
+    padding-top: 27px;
+  }
+
+  &__filter-date-dropdown {
+  }
+
+  &__filter-date-dropdown-text,
+  &__guests-text,
+  &__dropdown-text {
+    font-family: $montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $dark100;
+  }
+
+  &__filter-date-dropdown-element {
+  }
+
+  &__guests {
+    margin-top: 16px;
+  }
+
+  &__guests-text {
+  }
+
+  &__guests-element {
+  }
+
+  &__slider {
+    margin-top: 25px;
+  }
+
+  &__slider-text {
+    font-family: $montserrat;
+    font-style: Regular;
+    font-size: 12px;
+    position: relative;
+    top: -13px;
+  }
+
+  &__checkbox-buttons {
+    margin-top: 11px;
+  }
+
+  &__rich-checkbox-buttons {
+    margin-top: 29px;
+  }
+
+  &__dropdown {
+    margin-top: 28px;
+  }
+
+  &__dropdown-text {
+  }
+
+  &__dropdown-element {
+  }
+
+  &__expandable-checkbox {
+    margin-top: 31px;
+  }
+
+  &__article {
+    max-width: 834px;
+    padding-top: 34px;
+  }
+
+  &__text {
+    font-family: $montserrat;
+    font-weight: bold;
+    font-size: 24px;
+    color: $dark100;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__card {
+    margin-top: 22px;
+    &:nth-child(n + 4) {
+      margin-top: 20px;
+    }
+  }
+
+  &__pagination {
+    margin-top: 33px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+  }
+
+  &__footer {
+    flex: 0 0 auto;
+  }
+}

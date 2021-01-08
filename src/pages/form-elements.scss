@@ -65,7 +65,8 @@
   &__dropdown-center-text,
   &__buttons-title,
   &__pagination-text,
-  &__dropdown-right-text {
+  &__dropdown-right-text,
+  &__bullet-list-text {
     font-family: $montserrat;
     font-weight: bold;
     font-size: 12px;
@@ -405,7 +406,13 @@
   }
 
   &__bullet-list {
-    margin-top: 257px;
+    margin-top: 250px;
+  }
+
+  &__bullet-list-text {
+  }
+
+  &__bullet-list-element {
   }
 
   &__footer {

@@ -1,0 +1,243 @@
+@import "common/normalize.scss";
+@import "common/fonts.scss";
+@import "common/variables.scss";
+@import "common/global.scss";
+@import "../components/calendar-card/calendar-card.scss";
+@import "../components/footer/footer.scss";
+@import "../components/header/header.scss";
+@import "../components/text-field/text-field.scss";
+@import "../components/radio/radio.scss";
+@import "../components/checkbox-buttons/checkbox-buttons.scss";
+@import "../components/toggle/toggle.scss";
+@import "../components/rich-checkbox-buttons/rich-checkbox-buttons.scss";
+@import "../components/room-info/room-info.scss";
+@import "../components/bullet-list/bullet-list.scss";
+@import "../components/buttons/buttons.scss";
+@import "../components/rate-button/rate-button.scss";
+@import "../components/subscription-text-field/subscription-text-field.scss";
+@import "../components/range-slider/range-slider.scss";
+@import "../components/like-button/like-button.scss";
+@import "../components/review/review.scss";
+@import "../components/pagination/pagination.scss";
+@import "../components/expandable-checkbox-list/expandable-checkbox-list.scss";
+@import "../components/filter-date-dropdown/filter-date-dropdown.scss";
+@import "../components/date-dropdown/date-dropdown.scss";
+@import "../components/dropdown/dropdown.scss";
+@import "../components/price-card/price-card.scss";
+
+.room-details {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &__header {
+    flex: 0 0 auto;
+  }
+
+  &__main {
+    flex: 1 0 auto;
+  }
+
+  &__pictures {
+    display: flex;
+  }
+
+  &__left-block {
+    background-image: url(../images/details-room/image1.png);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 485px;
+    width: 68.125%;
+  }
+
+  &__right-block {
+    width: 31.875%;
+  }
+
+  &__picture-up {
+    background-image: url(../images/details-room/image2.png);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 243px;
+  }
+
+  &__picture-down {
+    background-image: url(../images/details-room/image3.png);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 242px;
+  }
+
+  &__information {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 139px;
+    padding-right: 140px;
+  }
+
+  &__intelligence {
+    margin-top: 71px;
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 109px;
+  }
+
+  &__info {
+  }
+
+  &__info-title {
+  }
+
+  &__info-element {
+    margin-top: 21px;
+  }
+
+  &__chart {
+  }
+
+  &__chart-title {
+  }
+
+  &__chart-block {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__circle {
+    width: 120px;
+    height: 120px;
+    background-color: $purple;
+  }
+
+  &__notes {
+    padding-left: 35px;
+    padding-top: 29px;
+  }
+
+  &__note {
+    display: flex;
+  }
+
+  &__marker1,
+  &__marker2,
+  &__marker3,
+  &__marker4 {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    position: relative;
+    top: 7px;
+    right: 5px;
+  }
+
+  &__marker1 {
+    background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
+  }
+
+  &__chart-text {
+    font-family: $montserrat;
+    font-size: 14px;
+    color: $dark75;
+  }
+
+  &__marker2 {
+    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  }
+
+  &__marker3 {
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  }
+
+  &__marker4 {
+    background: linear-gradient(180deg, #919191 0%, #3d4975 100%);
+  }
+
+  &__reviews {
+    margin-top: 32px;
+    padding-right: 70px;
+  }
+
+  &__review-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__review-text {
+  }
+
+  &__review-count {
+    padding-top: 2px;
+  }
+
+  &__review-men {
+    margin-top: 20px;
+  }
+
+  &__review-women {
+    margin-top: 23px;
+  }
+
+  &__data {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 78px;
+    padding-top: 9px;
+  }
+
+  &__rules {
+  }
+
+  &__rules-title {
+    padding-left: 20px;
+  }
+
+  &__rules-element {
+    padding-top: 8px;
+  }
+
+  &__cancel {
+    width: 341px;
+  }
+
+  &__cancel-title {
+  }
+
+  &__cancel-text {
+    padding-top: 18px;
+    line-height: 24px;
+  }
+
+  &__price {
+    margin-top: 70px;
+  }
+
+  &__line {
+    height: 1px;
+    background: rgba(31, 32, 65, 0.1);
+    margin-top: 58px;
+    padding-bottom: 0px;
+  }
+
+  &__footer {
+    flex: 0 0 auto;
+  }
+
+  &__info-title,
+  &__chart-title,
+  &__review-text,
+  &__cancel-title,
+  &__rules-title {
+    font-family: $montserrat;
+    font-weight: bold;
+    font-size: 19px;
+    color: $dark100;
+  }
+}

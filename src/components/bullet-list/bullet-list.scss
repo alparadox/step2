@@ -1,15 +1,4 @@
 .bullet-list {
-
-  &__title {
-    font-family: $montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 10px;
-    text-transform: uppercase;
-    color: $dark100;
-  }
-
   &__catalog {
     width: 100%;
     max-width: 256px;

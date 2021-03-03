@@ -27,7 +27,7 @@
   "homepage": "https://github.com/alparadox/step2#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "sass": "^1.26.10"
   },
   "dependencies": {
